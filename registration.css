@@ -1,0 +1,72 @@
+body {
+    background: #ffffff;
+    margin: 0;
+}
+
+ul {
+    list-style-type: none;
+    padding: 0;
+    overflow: hidden;
+    background-color: #ffffff;
+    margin : 0 !important;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  }
+  
+  li {
+    float: left;
+    
+  }
+  
+  li a {
+    display: block;
+    color: #3F3D56;
+    text-align: center;
+    padding: 20px;
+    text-decoration: none;
+    font-family: Girassol;
+    font-weight: bold;
+    font-size: 55px;
+    margin: 0;
+  }
+
+  h1 {
+      font-family: Girassol;
+      font-size: 55px;
+      color: #3F3D56;
+      text-align: center;
+      margin-top: 5px;
+      text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.20);
+  }
+
+  h2 {
+      font-family: Nunito;
+      color: #3F3D56;
+      margin-top: -30px;
+      text-align: center;
+      font-weight: 400;
+      text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.10);
+  }
+
+  label {
+      font-family: Nunito;
+  }
+  .radioLabel {
+      font-family: Nunito;
+      color: #3F3D56;
+      margin-right: 60px;
+  }
+
+  p {
+      display: inline;
+      font-family: Nunito;
+      color: #3F3D56;
+      margin-right: 40px;
+      font-size: 100%;
+  }
+  
+  form {
+      text-align: center;
+      color: #3F3D56;
+  }
+
+  
