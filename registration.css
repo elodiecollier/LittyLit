@@ -45,6 +45,7 @@ ul {
       text-align: center;
       font-weight: 400;
       text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.10);
+      margin-bottom: 40px;
   }
 
   label {
@@ -69,4 +70,125 @@ ul {
       color: #3F3D56;
   }
 
-  
+  .nameInput {
+    width: 20%;
+    padding: 10px 15px;
+    margin-bottom: 20px;
+    border-radius: 10px;
+    border: 2px solid white;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    margin-right: 50px;
+    margin-left: 10px;
+    float: inline;
+    font-size: 15px;
+  }
+
+  .inputEmail {
+    width: 53%;
+    padding: 10px 15px;
+    margin-bottom: 20px;
+    border-radius: 10px;
+    border: 2px solid white;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    margin-right: 50px;
+    margin-left: 10px;
+    font-size: 15px;
+  }
+
+  .firstNameLabel {
+    margin-right: 200px;
+    margin-left: -210px;
+  }
+
+  .lastNameLabel {
+    margin-left: 70px;
+  }
+
+  .emailLabel {
+    display: inline;
+    margin-right: 630px;
+  }
+
+  .inputEmail {
+    width: 640px;
+  }
+
+  .bdayInput {
+    width: 20%;
+    padding: 10px 15px;
+    margin-bottom: 20px;
+    border-radius: 10px;
+    border: 2px solid white;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    margin-right: 50px;
+    margin-left: 10px;
+    float: inline;
+    font-size: 15px;
+  }
+
+  .passInput {
+    width: 20%;
+    padding: 10px 15px;
+    border-radius: 10px;
+    border: 2px solid white;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    margin-right: 50px;
+    margin-left: 10px;
+    float: inline;
+    font-size: 15px;
+  }
+
+  .birthdayLabel {
+    margin-right: 200px;
+    margin-left: -210px;
+  }
+
+  .passwordLabel {
+    margin-left: 90px;
+  }
+
+  h3 {
+    font-family: Nunito;
+    text-align: left;
+    padding-top: 12px;
+    padding-left: 10px;
+    font-size: 15px;
+    font-weight: 300;
+  }
+
+  h4 {
+    font-family: Nunito;
+    text-align: left;
+    padding-left: 20px;
+    margin-top: -10px;
+    font-weight: 100;
+    font-size: 13px;
+  }
+
+  .passReq {
+    background-color: #DEE8EF;
+    width: 220px;
+    height: 120px;
+    border-radius: 5px;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    margin-left: 730px;
+    margin-top: -25px;
+  }
+
+  .submit {
+    padding: 15px 32px;
+    font-family: Nunito;
+    background-color: #2B6777;
+    color: #ffffff;
+    font-size: 20px;
+    padding: 10px 20px;
+    border-radius: 10px;
+    border: 2px solid #2B6777;
+    font-weight:bold;
+    margin-top: 25px;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  }
+
+  .submit:hover {
+    opacity: 0.8;
+  }
