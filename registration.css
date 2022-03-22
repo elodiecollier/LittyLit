@@ -192,3 +192,11 @@ ul {
   .submit:hover {
     opacity: 0.8;
   }
+
+ h5 {
+    font-family: Nunito;
+    text-align: center;
+    font-weight: 200;
+    font-size: 15px;
+    margin-top: 2px;
+  }
