@@ -11,8 +11,9 @@ img {
 ul {
     list-style-type: none;
     padding: 0;
-    width: 100%;
     overflow: hidden;
+    position: fixed;
+    width: 100%;
     background-color: #ffffff;
     margin: 0 !important;
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
@@ -20,7 +21,6 @@ ul {
 
 li {
     float: left;
-
 }
 
 li a {
@@ -116,8 +116,9 @@ li.active a {
 }
 
 .right {
+  padding-top: 9%;
+  padding-left: 1%;
   background: #ffffff;
-  margin-left: 0%;
 }
 
 .loginButton {
@@ -139,12 +140,12 @@ li.active a {
   opacity: 0.85;
 }
 
-.logoutButton {
+.subscribeButton {
     font-family: Nunito;
     background-color: #C8D8E4;
     color: #3F3D56;
     font-size: 20px;
-    padding: 5px 40px;
+    padding: 0.5px 25px;
     border-radius: 10px;
     border: 2px solid #C8D8E4;
     box-shadow: 5px 3px 10px #888888;
@@ -153,25 +154,34 @@ li.active a {
     margin-top: 2.3%;
 }
 
-.logoutButton:hover {
+.subscribeButton:hover {
     opacity: 0.85;
 }
 
 h1 {
   font-family: Nunito;
   text-align: left;
-  font-size: 30px;
+  font-size: 40px;
   color: #3F3D56;
   margin-bottom: 0;
   padding-left: 20%;
-  padding-top: 2%;
 }
 
 p {
-  color: #ffffff;
+  color: #3F3D56;
   font-family: Nunito;
-  font-size: 14px;
-  text-align: center;
+  font-size: 20px;
+  text-align: left;
+  padding-left: 20%;
+}
+
+b {
+  color: #3F3D56;
+  font-family: Nunito;
+  font-size: 20px;
+  text-align: left;
+  padding-left: 20%;
+  font-weight: bold;
 }
 
 .registerButton {
@@ -268,4 +278,98 @@ hr.rounded {
   .sidenav a {
     font-size: 18px;
   }
+}
+
+.nameInput {
+  width: 20%;
+  padding: 10px 15px;
+  margin-bottom: 20px;
+  border-radius: 10px;
+  border: 2px solid white;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  margin-right: 50px;
+  margin-left: 10px;
+  float: inline;
+  font-size: 15px;
+}
+
+.inputEmail {
+  width: 53%;
+  padding: 10px 15px;
+  margin-bottom: 20px;
+  border-radius: 10px;
+  border: 2px solid white;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  margin-right: 50px;
+  margin-left: 10px;
+  font-size: 15px;
+}
+
+.firstNameLabel {
+  margin-right: 200px;
+  margin-left: -210px;
+}
+
+.lastNameLabel {
+  margin-left: 70px;
+}
+
+.emailLabel {
+  display: inline;
+  margin-right: 630px;
+}
+
+.inputEmail {
+  width: 640px;
+}
+
+.bdayInput {
+  width: 20%;
+  padding: 10px 15px;
+  margin-bottom: 20px;
+  border-radius: 10px;
+  border: 2px solid white;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  margin-right: 50px;
+  margin-left: 10px;
+  float: inline;
+  font-size: 15px;
+}
+
+.passInput {
+  width: 20%;
+  padding: 10px 15px;
+  border-radius: 10px;
+  border: 2px solid white;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  margin-right: 50px;
+  margin-left: 10px;
+  float: inline;
+  font-size: 15px;
+}
+
+.birthdayLabel {
+  margin-right: 200px;
+  margin-left: -210px;
+}
+
+.passwordLabel {
+  margin-left: 90px;
+}
+
+.form {
+  padding-left: 20%;
+}
+
+input {
+  margin: .4rem 0;
+  margin-left: 1%;
+}
+
+.emailInput {
+  width: 300px;
+  border-radius: 10px;
+  border: 2px solid white;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  font-size: 20px;
 }

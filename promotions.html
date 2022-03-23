@@ -1,0 +1,100 @@
+<!DOCTYPE>
+<head>
+    <link href="promotions.css" rel="stylesheet">
+    <title>Welcome to LittyLit</title>
+    <link
+        href='https://fonts.googleapis.com/css?family=Nunito:400,700,400italic,700italic''
+        rel='stylesheet'>
+    <link
+        href='https://fonts.googleapis.com/css?family=Girassol:400,700,400italic,700italic''
+        rel='stylesheet'>
+</head>
+
+<html>
+    <body>
+        <main>
+            <ul>
+                <li><a class="homeNav" href="home.html">LittyLit</a></li>
+                <li><a class="browseNav" href="myAccount.html">Browse</a></li>
+                <li><a class="myAccNav" href="myAccount.html">My Account</a></li>
+                <li><a class="cartNav" href="myAccount.html"><img
+                            class="cartImg"
+                            src="./cart.png"></a></li>
+            </ul>
+            <div class="sidenav">
+                <div class="avatar">
+                    <img
+                        src="https://cdn-icons-png.flaticon.com/512/147/147142.png"
+                        width="45px"
+                        height="45px"
+                        style="vertical-align: middle;">
+                </div>
+                <div class="nametag">
+                    <div class="username">
+                        <span style="vertical-align: top;">John John-John</span>
+                    </div>
+                    <div class="role">
+                        <span style="vertical-align: bottom;">customer</span>
+                    </div>
+                </div>
+                <div>
+                    <hr class="rounded">
+                    <a href="#">Account Details</a>
+                    <a href="#">Promotions</a>
+                    <a href="#">Logout</a>
+                </div>
+            </div>
+            <div class="right">
+                <h1>Sign up today!</h1>
+                <p><strong>Want to receive the lastest news and promo codes from
+                        LittyLit?
+                        Subscribe to our newsletter today!</strong></p>
+            </div>
+            <form class="form" action="">
+                <div id="container" style="width:50%; vertical-align: middle;">
+                    <div id="left" style="float:left; width: 15%; padding-top:
+                        1%;">
+                        <p>
+                            <strong>Email</strong>
+                        </p>
+                    </div>
+                    <div id="middle" style="float:left; width: 40%; padding-top:
+                        2.7%; padding-right: 7%;">
+                        <input type="email" id="email" class="emailInput"
+                            pattern=".+@globex\.com" size="30"
+                            required>
+                    </div>
+                    <div id="right" style="float:left; width: 20%; padding-top:
+                        3%; padding-left: 12%;">
+                        <button onclick="window.location.href='login.html'"
+                            class="subscribeButton"><strong>Subscribe</strong></button>
+                    </div>
+                </div>
+            </form>
+            <div class="right">
+                <p><strong>Want to unsubscribe?</strong></p>
+            </div>
+            <form class="form" action="">
+                <div id="container" style="width:50%; vertical-align: middle;">
+                    <div id="left" style="float:left; width: 15%; padding-top:
+                        1%;">
+                        <p>
+                            <strong>Email</strong>
+                        </p>
+                    </div>
+                    <div id="middle" style="float:left; width: 40%; padding-top:
+                        2.7%; padding-right: 7%;">
+                        <input type="email" id="email" class="emailInput"
+                            pattern=".+@globex\.com" size="30"
+                            required>
+                    </div>
+                    <div id="right" style="float:left; width: 20%; padding-top:
+                        3%; padding-left: 12%;">
+                        <button onclick="window.location.href='login.html'"
+                            class="subscribeButton"><strong>Unsubscribe</strong></button>
+                    </div>
+                </div>
+            </form>
+        </main>
+    </body>
+</html>
