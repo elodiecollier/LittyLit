@@ -14,15 +14,38 @@
           <h2>Let's get you registered!</h2>
           <form action="">
             <p>Are you registering as a...</p>
+<!-- radio buttons -->
             <input type="radio" id="customer" name="registeringAs">
             <label class="radioLabel" for="customer">Customer</label>
+
             <input type="radio" id="vendor" name="registeringAs">
-            <label class="radioLabel" for="vendor">Vendor</label><br>
-            <label for="fname">First Name</label>
-            <input type="text" id="fname" name="registeringAs">
-            <label for="lname">Last Name</label>
-            <input type="text" id="lname" name="registeringAs">
+            <label class="radioLabel" for="vendor">Vendor</label><br><br>
+<!-- first name, last name -->
+            <p class="firstNameLabel">First Name</p>
+            <p class="lastNameLabel">Last Name</p> <br>
+
+            <input class="nameInput" type="text" id="fname" name="fname">
+            <input class="nameInput" type="text" id="lname" name="fname"> <br>
+<!-- email -->
+            <p class="emailLabel">Email</p> <br>
+            <input class="inputEmail" type="email" id="email" name="email"><br><br>
+
+            <p class="birthdayLabel">Birthday</p>
+            <p class="passwordLabel">Password</p> <br>
+
+            <input class="bdayInput" type="date" id="bday" name="bday">
+            <input class="passInput" type="password" id="pass" name="pass"> <br>
+
+            <div class="passReq">
+                <h3>Your password must include:</h3>
+                <h4>- at least 8 characters</h4>
+                <h4>- at least one letter</h4>
+                <h4>- at least one number</h4>
+                </h4>
+            </div>
+            <input class="submit" type="submit" value="Continue">
         </form>
+        <h5>Already have an account? Click <a href="login.html">here</a> to login.</h5>
     </main>
 </body>
 
