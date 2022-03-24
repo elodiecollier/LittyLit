@@ -1,0 +1,330 @@
+body {
+    background: white;
+    margin: 0;
+}
+/* Header */
+img {
+    margin-top: 5%;
+    margin-left: 5%;
+}
+
+ul {
+    list-style-type: none;
+    padding: 0;
+    overflow: hidden;
+    background-color: #ffffff;
+    margin : 0 !important;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  }
+  
+  li {
+    float: left;
+    text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+
+  }
+  
+  li a {
+    display: block;
+    color: #3F3D56;
+    text-align: center;
+    padding: 20px;
+    text-decoration: none;
+    font-family: Girassol;
+    font-weight: bold;
+    font-size: 55px;
+    margin: 0;
+  }
+
+  
+
+  .MyBooks {
+    padding: 15px 32px;
+    font-family: Nunito;
+    color: #3F3D56;
+    font-size: 20px;
+    padding: 10px 20px;
+    float: right;
+    margin-right: 5%;
+    margin-top: 2%;
+    text-decoration: none;
+  }
+
+  .MyBooks:hover {
+      opacity: 0.85;
+
+  }
+
+  /* End of Hover */
+
+  /* Go Back link */
+  .GoBack {
+
+    margin-left: 50px;
+    margin-top: 60px;
+    margin-bottom: 30px;
+    font-family: 'Nunito';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 19px;
+    line-height: 16px;
+    display: flex;
+    align-items: center;
+    text-decoration-line: underline;
+    color: #3F3D56;
+  }
+  /* End of Go Back link */
+
+  /* Div Background Details */
+  .center {
+    margin: auto;
+    margin-top: 20px;
+    width: 1300px;
+    height: 500px;
+    display: flex;
+    background: #C8D8E4;
+    box-shadow: 3px 4px 4px 2px rgba(0, 0, 0, 0.4);
+    border-radius: 5px;
+  }
+
+/* End of Div Details */
+
+
+/* Div Pics */
+.picLeft {
+    text-align: center;
+   
+ 
+}
+
+.pic {
+    margin: auto;
+    display: block;
+    padding-top: 25%;
+    padding-bottom: 5%;
+}
+
+.Cover {
+    font-family: 'Nunito';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 17px;
+    line-height: 16px;
+    text-decoration-line: underline;
+
+    color: #3F3D56;
+}
+
+/* End of Div Pics */
+
+
+/* Questions in Middle */
+.QMiddle {
+    margin-top: 90px;
+    margin-bottom: 20px;
+}
+form {
+   
+    color: #3F3D56;
+}
+
+p {
+    display: inline;
+    font-family: Nunito;
+    color: #3F3D56;
+    
+    font-size: 100%;
+}
+
+.Text {
+
+    width: 80%;
+    height: 5%;
+    background-color: white;
+    padding: 2px 15px;
+    margin-top: 5px;
+    margin-bottom: 30px;
+    border-radius: 7px;
+    border: 2px solid white;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    margin-right: 50px;
+    /* margin-left: 10px; */
+    font-size: 12px;
+    
+  }
+::placeholder {
+    color: #3F3D56;
+    opacity: 1;
+    font-weight: bolder;
+}
+  .TextDrop {
+    width: 70%;
+    font-family: Nunito;
+    height: 6%;
+    margin-top: 5px;
+    margin-bottom: 30px;
+    border-radius: 7px;
+    border: 2px solid white;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    margin-right: 50px;
+    font-size: 12px; 
+    color: #3F3D56;
+  }
+
+/* End of Questions in Middle */
+
+
+
+/* Questions at End */
+.QEnd {
+    margin-top: 105px;
+    margin-bottom: 20px;
+}
+
+.Inventory {
+    width: 35%;
+    font-family: Nunito;
+    height: 6%;
+    margin-top: 5px;
+    margin-bottom: 30px;
+    border-radius: 7px;
+    border: 2px solid white;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    margin-right: 50px;
+    font-size: 12px; 
+    color: #3F3D56;
+    margin-left: 10px;
+}
+
+
+.TextPrice {
+    width: 75%;
+    font-family: Nunito;
+    height: 6%;
+    margin-top: 5px;
+    margin-bottom: 30px;
+    border-radius: 7px;
+    border: 2px solid white;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    margin-right: 50px;
+    font-size: 12px; 
+    color: #3F3D56;
+
+}
+
+.textISBN {
+    width: 76%;
+    font-family: Nunito;
+    height: 6%;
+    margin-top: 5px;
+    margin-bottom: 30px;
+    border-radius: 7px;
+    border: 2px solid white;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    margin-right: 50px;
+    font-size: 12px; 
+    color: #3F3D56; 
+}
+/* End of Questions at End */
+
+
+/* Buttons Div Class */
+.Buttons {
+    margin-top: 420px;
+    margin-bottom: 30px;
+    display: flex;
+}
+
+.Remove {
+    font-family: 'Nunito';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 17px;
+    line-height: 16px;
+    margin-top: 20px;
+    text-decoration-line: underline;
+    color: #3F3D56;
+}
+
+.SaveChanges {
+    position: absolute;
+    margin-top: 10px;
+    font-family: Nunito;
+    color: #ffffff;
+    background: #2B6777;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    border-radius: 5px;
+    padding: 10px 20px;
+    font-size: 17px;
+    border: 2px solid #2B6777;
+    margin-left: 14%;
+    
+}
+/* 
+padding: 15px 32px;
+    font-family: Nunito;
+    background-color: #3F3D56;
+    color: #ffffff;
+    font-size: 20px;
+    padding: 10px 20px;
+    border-radius: 10px;
+    border: 2px solid #3F3D56;
+    box-shadow: 5px 3px 10px #888888;
+    float: right;
+    margin-right: 2%;
+    margin-top: 2%; */
+
+
+/* End of Buttons Div Class */
+
+  /* 
+  .left {
+    width: 50%; 
+    height: 88%; 
+    float: left; 
+    background: #2B6777
+  }
+
+  .right {
+    background: #C8D8E4;
+    margin-left: 50%; 
+  }
+  
+  h1 {
+      font-family: Girassol;
+      text-align: center;
+      margin-right: 10%;
+      font-size: 145px;
+      color: #ffffff;
+      text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+      margin-bottom: 0;
+      margin-top: 20%;
+  }
+
+  p {
+      color: #ffffff;
+      font-family: Nunito;
+      font-size: 30px;
+      text-align: center;
+      padding-left: 12%;
+      padding-right: 12%;
+      margin-right: 10%;
+      margin-top: 0;
+  }
+
+  .registerButton {
+    padding: 15px 32px;
+    font-family: Nunito;
+    background-color: #ffffff;
+    color: #3F3D56;
+    font-size: 20px;
+    padding: 10px 20px;
+    border-radius: 10px;
+    border: 2px solid #ffffff;
+    margin-left: 26%;
+    margin-top: 3%;
+    font-weight:bold;
+  }
+
+  .registerButton:hover {
+      opacity: 0.85;
+  } */
