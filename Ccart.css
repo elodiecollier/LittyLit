@@ -20,7 +20,7 @@ ul {
   li {
     float: left;
     text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
-
+    
   }
   
   li a {
@@ -49,8 +49,14 @@ ul {
     text-decoration: none;
   }
 
-  img {
-    padding-bottom: 90px;
+  .MyBooks img {
+    position: relative;
+    width: 54px;
+    height: 42px;
+    float: right;
+    right: 10px;
+    top: -10px;
+    
   }
 
   .MyBooks:hover {
@@ -78,16 +84,21 @@ ul {
   }
   /* End of Go Back link */
 
+
+  
+
   /* Div Background Details */
   .center {
-    margin: auto;
+    
+    margin-left: 70px;
     margin-top: 20px;
-    width: 1300px;
-    height: 500px;
+    width: 900px;
+    height: 250px;
     display: flex;
     background: #C8D8E4;
     box-shadow: 3px 4px 4px 2px rgba(0, 0, 0, 0.4);
     border-radius: 5px;
+    
   }
 
 /* End of Div Details */
@@ -96,15 +107,12 @@ ul {
 /* Div Pics */
 .picLeft {
     text-align: center;
-   
- 
 }
 
 .pic {
     margin: auto;
     display: block;
-    padding-top: 25%;
-    padding-bottom: 5%;
+    margin-top: 20px;
 }
 
 .Cover {
@@ -123,71 +131,52 @@ ul {
 
 /* Questions in Middle */
 .QMiddle {
-    margin-top: 90px;
+    
     margin-bottom: 20px;
 }
-form {
-   
-    color: #3F3D56;
-}
+
 
 p {
     display: inline;
     font-family: Nunito;
     color: #3F3D56;
-    
     font-size: 100%;
 }
 
-.Text {
-
-    width: 80%;
-    height: 5%;
-    background-color: white;
-    padding: 2px 15px;
-    margin-top: 5px;
-    margin-bottom: 30px;
-    border-radius: 7px;
-    border: 2px solid white;
-    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
-    margin-right: 50px;
-    /* margin-left: 10px; */
-    font-size: 12px;
-    
-  }
-::placeholder {
+.TitleInfo {
+    top: 10px;
+    font-family: 'Nunito';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 25px;
+    line-height: 33px;
+    display: flex;
+    align-items: center;
     color: #3F3D56;
-    opacity: 1;
-    font-weight: bolder;
 }
-  .TextDrop {
-    width: 70%;
-    font-family: Nunito;
-    height: 6%;
-    margin-top: 5px;
-    margin-bottom: 30px;
-    border-radius: 7px;
-    border: 2px solid white;
-    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
-    margin-right: 50px;
-    font-size: 12px; 
+
+.AuthorInfo {
+    left: 25.28%;
+    right: 59.07%;
+    top: 40.27%;
+
+    font-family: 'Nunito';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 15px;
+    line-height: 18px;
+    display: flex;
+    align-items: center;
+    text-align: center;
     color: #3F3D56;
-  }
-
-/* End of Questions in Middle */
-
-
-
-/* Questions at End */
-.QEnd {
-    margin-top: 105px;
-    margin-bottom: 20px;
 }
+
+
 
 .Inventory {
-    width: 35%;
+    width: 50px;
     font-family: Nunito;
-    height: 6%;
+    height: 20px;
     margin-top: 5px;
     margin-bottom: 30px;
     border-radius: 7px;
@@ -198,69 +187,83 @@ p {
     color: #3F3D56;
     margin-left: 10px;
     box-shadow: inset 0px 4px 4px rgba(0, 0, 0, 0.25);
-}
-
-
-.TextPrice {
-    width: 75%;
-    font-family: Nunito;
-    height: 6%;
-    margin-top: 5px;
-    margin-bottom: 30px;
-    border-radius: 7px;
-    border: 2px solid white;
-    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
-    margin-right: 50px;
-    font-size: 12px; 
-    color: #3F3D56;
 
 }
 
-.textISBN {
-    width: 76%;
-    font-family: Nunito;
-    height: 6%;
-    margin-top: 5px;
-    margin-bottom: 30px;
-    border-radius: 7px;
-    border: 2px solid white;
-    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
-    margin-right: 50px;
-    font-size: 12px; 
-    color: #3F3D56; 
-}
-/* End of Questions at End */
+/* End of Questions in Middle */
 
-
-/* Buttons Div Class */
-.Buttons {
-    margin-top: 420px;
-    margin-bottom: 30px;
-    display: flex;
-}
-
-.Remove {
+/* Small Price Div */
+.PriceInfo {
+    float: right;
+    margin-right: 20px;
     font-family: 'Nunito';
     font-style: normal;
     font-weight: 700;
-    font-size: 17px;
-    line-height: 16px;
-    margin-top: 20px;
-    text-decoration-line: underline;
+    font-size: 24px;
+    line-height: 33px;
+    display: flex;
+    align-items: center;
+    text-align: center;
     color: #3F3D56;
 }
 
-.SaveChanges {
-    position: absolute;
-    margin-top: 10px;
-    font-family: Nunito;
-    color: #ffffff;
-    background: #2B6777;
+/* End of Small Price Div */
+
+
+/* Order Summary on Side Div */
+.order {
+position: absolute;
+width: 300px;
+height: 200px;
+left: 1130px;
+top: 110px;
+
+background: #2B6777;
+
+}
+
+.order h1 {
+    font-family: 'Nunito';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 25px;
+    line-height: 25px;
+    text-align: center;
+    margin-bottom: 25px;
+    color: #FFFFFF;
+
+}
+
+.order p {
+    font-family: 'Nunito';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 9px;
+    line-height: 12px;
+    margin-left: 10px;
+    color: #FFFFFF;
+}
+
+
+
+.order span {
+    margin-left: 150px;
+    font-size: 20px;
+    font-weight: bolder;
+}
+
+.Checkout {
+    margin-left: 75px;
+    margin-top: 35px;
+    width: 151px;
+    height: 34px;
+    border: 2px solid white;
+    background: #FFFFFF;
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
     border-radius: 5px;
-    padding: 10px 20px;
-    font-size: 17px;
-    border: 2px solid #2B6777;
-    margin-left: 14%;
-    
 }
+
+.Checkout:hover {
+    opacity: 0.8;
+  }
+/* End of Order Summary on Side Div */

@@ -20,7 +20,7 @@ ul {
   li {
     float: left;
     text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
-
+    
   }
   
   li a {
@@ -49,8 +49,14 @@ ul {
     text-decoration: none;
   }
 
-  img {
-    padding-bottom: 90px;
+  .MyBooks img {
+    position: relative;
+    width: 54px;
+    height: 42px;
+    float: right;
+    right: 10px;
+    top: -10px;
+    
   }
 
   .MyBooks:hover {
@@ -96,8 +102,6 @@ ul {
 /* Div Pics */
 .picLeft {
     text-align: center;
-   
- 
 }
 
 .pic {
@@ -123,71 +127,107 @@ ul {
 
 /* Questions in Middle */
 .QMiddle {
-    margin-top: 90px;
+    margin-top: 40px;
     margin-bottom: 20px;
+    margin-left: 30px;
 }
-form {
-   
-    color: #3F3D56;
-}
+
 
 p {
     display: inline;
     font-family: Nunito;
     color: #3F3D56;
-    
     font-size: 100%;
 }
 
-.Text {
-
-    width: 80%;
-    height: 5%;
-    background-color: white;
-    padding: 2px 15px;
-    margin-top: 5px;
-    margin-bottom: 30px;
-    border-radius: 7px;
-    border: 2px solid white;
-    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
-    margin-right: 50px;
-    /* margin-left: 10px; */
-    font-size: 12px;
-    
-  }
-::placeholder {
+.TitleInfo {
+    left: 23.15%;
+    right: 47.68%;
+    top: 29.41%;
+    bottom: 59.73%;
+    font-family: 'Nunito';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 40px;
+    line-height: 33px;
+    display: flex;
+    align-items: center;
+    text-align: center;
     color: #3F3D56;
-    opacity: 1;
-    font-weight: bolder;
 }
-  .TextDrop {
-    width: 70%;
-    font-family: Nunito;
-    height: 6%;
-    margin-top: 5px;
-    margin-bottom: 30px;
-    border-radius: 7px;
-    border: 2px solid white;
-    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
-    margin-right: 50px;
-    font-size: 12px; 
+
+.AuthorInfo {
+    left: 25.28%;
+    right: 59.07%;
+    top: 40.27%;
+    bottom: 55.2%;
+
+    font-family: 'Nunito';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 15px;
+    line-height: 18px;
+    display: flex;
+    align-items: center;
+    text-align: center;
     color: #3F3D56;
-  }
+}
+
+.PriceInfo {
+    left: 23.15%;
+    right: 47.68%;
+    top: 29.41%;
+    bottom: 59.73%;
+    font-family: 'Nunito';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 33px;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    color: #3F3D56;
+}
+
+
 
 /* End of Questions in Middle */
 
 
+/* Buttons Div Class */
+.Buttons {
+    margin-top: 20px;
+    margin-bottom: 450px;
+    
+}
 
-/* Questions at End */
-.QEnd {
-    margin-top: 105px;
-    margin-bottom: 20px;
+.AddCart { 
+    width: 180px;
+    height: 40px;
+    margin: auto;
+    margin-left: 80px;
+    margin-top: 40px;
+    margin-bottom: 10px;
+    background: #2B6777;
+    border: 2px solid #2B6777;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    border-radius: 5px;
+    font-family: 'Nunito';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 19px;
+    color: #FFFFFF; 
+}
+
+.InventoryText {
+    padding-left: 100px;
 }
 
 .Inventory {
-    width: 35%;
+    width: 50px;
     font-family: Nunito;
-    height: 6%;
+    height: 20px;
     margin-top: 5px;
     margin-bottom: 30px;
     border-radius: 7px;
@@ -199,68 +239,4 @@ p {
     margin-left: 10px;
     box-shadow: inset 0px 4px 4px rgba(0, 0, 0, 0.25);
 }
-
-
-.TextPrice {
-    width: 75%;
-    font-family: Nunito;
-    height: 6%;
-    margin-top: 5px;
-    margin-bottom: 30px;
-    border-radius: 7px;
-    border: 2px solid white;
-    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
-    margin-right: 50px;
-    font-size: 12px; 
-    color: #3F3D56;
-
-}
-
-.textISBN {
-    width: 76%;
-    font-family: Nunito;
-    height: 6%;
-    margin-top: 5px;
-    margin-bottom: 30px;
-    border-radius: 7px;
-    border: 2px solid white;
-    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
-    margin-right: 50px;
-    font-size: 12px; 
-    color: #3F3D56; 
-}
-/* End of Questions at End */
-
-
-/* Buttons Div Class */
-.Buttons {
-    margin-top: 420px;
-    margin-bottom: 30px;
-    display: flex;
-}
-
-.Remove {
-    font-family: 'Nunito';
-    font-style: normal;
-    font-weight: 700;
-    font-size: 17px;
-    line-height: 16px;
-    margin-top: 20px;
-    text-decoration-line: underline;
-    color: #3F3D56;
-}
-
-.SaveChanges {
-    position: absolute;
-    margin-top: 10px;
-    font-family: Nunito;
-    color: #ffffff;
-    background: #2B6777;
-    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
-    border-radius: 5px;
-    padding: 10px 20px;
-    font-size: 17px;
-    border: 2px solid #2B6777;
-    margin-left: 14%;
-    
-}
+/* End of Buttons Div Class */

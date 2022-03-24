@@ -1,0 +1,176 @@
+body {
+    background: white;
+    margin: 0;
+}
+/* Header */
+img {
+    margin-top: 5%;
+    margin-left: 5%;
+}
+
+ul {
+    list-style-type: none;
+    padding: 0;
+    overflow: hidden;
+    background-color: #ffffff;
+    margin : 0 !important;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  }
+  
+  li {
+    float: left;
+    text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    
+  }
+  
+  li a {
+    display: block;
+    color: #3F3D56;
+    text-align: center;
+    padding: 20px;
+    text-decoration: none;
+    font-family: Girassol;
+    font-weight: bold;
+    font-size: 55px;
+    margin: 0;
+  }
+
+  
+
+  .MyBooks {
+    padding: 15px 32px;
+    font-family: Nunito;
+    color: #3F3D56;
+    font-size: 20px;
+    padding: 10px 20px;
+    float: right;
+    margin-right: 5%;
+    margin-top: 2%;
+    text-decoration: none;
+  }
+
+  .MyBooks img {
+    position: relative;
+    width: 54px;
+    height: 42px;
+    float: right;
+    right: 10px;
+    top: -10px;
+    
+  }
+
+  .MyBooks:hover {
+      opacity: 0.85;
+
+  }
+
+  /* End of Hover */
+
+  
+
+  /* Div Background Details */
+  .center {
+    margin: auto;
+    margin-top: 100px;
+    width: 1000px;
+    height: 500px;
+    display: flex;
+    flex-direction: column;
+    background: #C8D8E4;
+    box-shadow: 3px 4px 4px 2px rgba(0, 0, 0, 0.4);
+    border-radius: 5px;
+  }
+
+  .center h1 {
+    font-family: 'Nunito';
+    text-align: center; 
+    margin-left: 10px;
+    margin-top: 150px; 
+    font-style: normal;
+    font-weight: 700;
+    font-size: 40px;
+    line-height: 22px;
+    
+    color: #2F2E41;
+    
+  }
+
+  .center h1 span {
+        font-family: 'Girassol';
+        font-style: normal;
+  }
+
+  .center h2 {
+    font-family: 'Nunito';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 22px;
+    margin-bottom: 30px;
+    /* or 147% */
+    
+    text-align: center;
+    
+    color: #2F2E41;
+  }
+/* End of Div Details */
+
+/* Code Div Details */
+
+.Code {
+    width: 283px;
+    height: 48px;
+    background: #FFFFFF;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    border-radius: 5px;
+    margin-left:350px;
+}
+
+.Code span {
+    position: absolute;
+    white-space: pre;
+    width: 214px;
+    height: 15px;
+    margin-left: 75px;
+    margin-top: 20px;
+    font-family: 'Nunito';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 22px;
+    
+
+    color: #000000;
+
+    
+}
+
+/* End of code for div details */
+
+
+/* Buttons Div Class */
+
+.Login { 
+    width: 130px;
+    height: 45px;
+    margin: auto;
+    margin-left: 100x;
+    margin-top: 20px;
+    margin-bottom: 10px;
+    background: #2B6777;
+    border: 2px solid #2B6777;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    border-radius: 5px;
+    font-family: 'Nunito';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 19px;
+    color: #FFFFFF; 
+}
+
+.ReturnBrowse:hover {
+    opacity: 0.8;
+}
+
+/* End of Buttons Div Class */
