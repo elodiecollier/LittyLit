@@ -1,0 +1,89 @@
+<!DOCTYPE>
+<head>
+    <link href="customer-checkout.css" rel="stylesheet">
+    <title>Welcome to LittyLit</title>
+    <link href='https://fonts.googleapis.com/css?family=Nunito'
+        rel='stylesheet'>
+    <link href='https://fonts.googleapis.com/css?family=Girassol'
+        rel='stylesheet'>
+</head>
+
+<html>
+    <body>
+        <main>
+            <ul>
+                <li><a class="homeNav" href="home.html">LittyLit</a></li>
+                <li><a class="browseNav" href="myAccount.html">Browse</a></li>
+                <li><a class="myAccNav" href="myAccount.html">My Account</a></li>
+                <li><a class="cartNav" href="myAccount.html"><img
+                            class="cartImg"
+                            src="./cart.png"></a></li>
+            </ul>
+
+            <div class="shippingDiv">
+                <a class="goBackLink" href="">&lt;&lt;Go Back</a>
+                <h1>Shipping</h1>
+                <form class="orderInfoDiv">
+                    <p class="addressLabel">Street Address</p> <br>
+                    <input class="addressInput" type="address" id="email" name="address"><br><br>
+
+                    <p class="cityLabel">City</p>
+                    <p class="stateLabel">State</p>
+                    <p class="zipLabel">Zip Code</p> <br>
+
+                    <input class="cityInput" type="text" id="city" name="city">
+                    <input class="stateInput" type="text" id="state" name="state">
+                    <input class="zipInput" type="text" id="zip" name="zip"> <br><br>
+
+                    <p class="firstNameLabel">First Name</p>
+                    <p class="lastNameLabel">Last Name</p> <br>
+
+                    <input class="nameInput" type="text" id="fname" name="fname">
+                    <input class="nameInput" type="text" id="lname" name="fname"> <br>
+
+                    <p class="emailLabel">Email</p> <br>
+                    <input class="emailInput" type="email" id="email" name="email"><br><br>
+
+                    <hr class="orderLine">
+
+                    <h1 class="paymentMethod">Payment Method</h1>
+                    <input type="radio" id="debit" name="payment">
+                    <label class="radioLabel" for="customer">Debit</label>
+                    <input type="radio" id="credit" name="payment">
+                    <label class="radioLabel" for="customer">Credit</label>
+                    <input type="radio" id="in-store" name="payment">
+                    <label class="radioLabel" for="customer">In-Store</label> <br><br>
+
+                    <p class="emailLabel">Card Number</p> <br>
+                    <input class="emailInput" type="cardNumb" id="cardNumb" name="cardNumb"><br><br>
+
+                    <p class="cvvLabel">CVV</p>
+                    <p class="payZipLabel">Zip Code</p> <br>
+
+                    <input class="nameInput" type="text" id="fname" name="fname">
+                    <input class="nameInput" type="text" id="lname" name="fname"> <br>
+
+                    <h5>*If you have chosen the "Pay at Store" option, you will have up to 5 days to pick up your books at a LittyLit store location.</h5>
+                </form>
+            </div>
+
+            <div class="orderSumDiv">
+                <h2>Order Summary</h2>
+                <h3>Subtotal:</h3>
+                <h3 class="subtotal">$10.00</h3> <br>
+                <h3>Tax:</h3>
+                <h3 class="tax">$0.70</h3> <br>
+                <h3>Promotion:</h3>
+                <h3 class="promo">-$5.35</h3> <br>
+                <h3>Total:</h3>
+                <h3 class="total">$5.35</h3>
+                <hr class="promoLine">
+                <form class="promotionForm" action="">
+                    <label for="pCode">Promotional Code</label><br>
+                    <input class="promoSubmit" type="text" name="pCode"><br>
+                    <input type="submit" value="PLACE ORDER"><br>
+                </form>
+            </div>
+        </main>
+    </body>
+</html>

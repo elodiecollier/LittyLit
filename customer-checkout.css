@@ -1,0 +1,372 @@
+body {
+    background: #ffffff;
+    margin: 0;
+  }
+  
+  img {
+      margin-top: 5%;
+      margin-left: 5%;
+  }
+  
+  ul {
+      list-style-type: none;
+      padding: 0;
+      width: 100%;
+      overflow: hidden;
+      background-color: #ffffff;
+      margin: 0 !important;
+      box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  }
+  
+  li {
+      float: left;
+  
+  }
+  
+  li a {
+    display: block;
+    color: #3f3d56;
+    text-align: center;
+    padding: 20px;
+    text-decoration: none;
+    font-family: Girassol;
+    font-weight: bold;
+    font-size: 55px;
+    margin: 0;
+  }
+  
+  li.active a {
+      color: #C8D8E4;
+      text-transform: uppercase;
+  }
+  
+  .homeNav {
+      display: block;
+      color: #3F3D56;
+      text-align: center;
+      padding: 20px;
+      text-decoration: none;
+      font-family: Girassol;
+      font-weight: bold;
+      font-size: 55px;
+      margin: 0;
+  }
+  
+  .browseNav {
+      display: block;
+      color: #3F3D56;
+      text-align: center;
+      padding: 20px;
+      text-decoration: none;
+      font-family: Nunito;
+      font-size: 25px;
+      margin-left: 780px;
+      padding-top: 36px;
+      height: 6.8%;
+  }
+  
+  .browseNav:hover {
+      background-color: #C8D8E4;
+  }
+  
+  .myAccNav {
+      display: block;
+      color: #3F3D56;
+      text-align: center;
+      padding: 20px;
+      text-decoration: none;
+      font-family: Nunito;
+      font-size: 25px;
+      padding-top: 36px;
+      height: 6.8%;
+  }
+  
+  .myAccNav:hover {
+      background-color: #C8D8E4;
+  }
+  
+  .cartNav {
+      display: block;
+      color: #3F3D56;
+      text-align: center;
+      padding: 10px;
+      text-decoration: none;
+      font-family: Nunito;
+      font-size: 25px;
+      height: 11.5%;
+      padding-top: 12px;
+  }
+  
+  .cartNav:hover {
+      background-color: #C8D8E4;
+  }
+  
+  .cartImg {
+      width: 90px;
+      height: 70px;
+      vertical-align: top; 
+      text-align: center
+  }
+
+  .orderSumDiv {
+      width: 25%;
+      height: 500px;
+      background-color: #2B6777;
+      float: right;
+      border-bottom-left-radius: 10px;
+      display: inline;
+  }
+
+  h2 {
+      color: #ffffff;
+      font-family: Nunito;
+      font-size: 30px;
+      margin-left: 20px;
+      margin-top: 10px;
+  }
+
+  h3 {
+      display: inline;
+      color: #ffffff;
+      font-family: Nunito;
+      margin-left: 22px;
+  }
+
+  .promoLine {
+      background-color: #ffffff;
+      border-color: #ffffff;
+      width: 300px;
+  }
+
+  form {
+    margin-top: 20px;
+  }
+
+  label {
+      font-family: Nunito;
+      color: #ffffff;
+      margin-left: 24px;
+      font-size: 20px;
+  }
+
+  .promoSubmit {
+    width: 300px;
+    padding: 8px 20px;
+    margin-bottom: 20px;
+    border-radius: 10px;
+    border: 2px solid white;
+    margin-left: 23px;
+  }
+
+  .subtotal {
+      margin-left: 140px;
+  }
+
+  .tax {
+    margin-left: 201px;
+  }
+
+  .promo {
+    margin-left: 128px;
+  }
+
+  .total {
+    margin-left: 160px;
+    font-size: 30px;
+  }
+
+  input[type=submit] {
+    padding: 15px 32px;
+    font-family: Nunito;
+    background-color: #C8D8E4;
+    color: #3F3D56;
+    font-size: 30px;
+    padding: 10px 20px;
+    border-radius: 10px;
+    border: 2px solid #C8D8E4;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    margin-top: 40px;
+    margin-left: 55px;
+  }
+
+  input[type=submit]:hover {
+      opacity: 0.8;
+  }
+
+  .shippingDiv {
+      margin-top: 20px;
+      display: inline;
+      float: left;
+      width: 75%;
+  }
+
+  h1 {
+      font-family: Nunito;
+      color: #3F3D56;
+      font-size: 40px;
+      margin-left: 20px;
+  }
+
+  .goBackLink {
+      font-family: Nunito;
+      font-size: 20px;
+      margin-left: 20px;
+      color: #3F3D56; 
+  }
+
+  p {
+    display: inline;
+    font-family: Nunito;
+    color: #3F3D56;
+    margin-right: 40px;
+    font-size: 100%;
+}
+
+  .addressLabel {
+    display: inline;
+    font-family: Nunito;
+    margin-left: 42px;
+    color: #3F3D56;
+   }
+
+   .cityLabel {
+    margin-left: 50px;
+    margin-right: 200px;
+   }
+
+   .stateLabel {
+    margin-left: 100px;
+    margin-right: 300px;
+   }
+
+  .addressInput {
+    padding: 10px 15px;
+    margin-bottom: 20px;
+    border-radius: 10px;
+    border: 2px solid white;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    margin-right: 50px;
+    margin-left: 10px;
+    font-size: 15px;
+    width: 895px;
+    margin-left: 40px;
+  }
+
+  .cityInput {
+    width: 250px;
+    padding: 10px 15px;
+    border-radius: 10px;
+    border: 2px solid white;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    float: inline;
+    font-size: 15px;
+    margin-right: 78px;
+    margin-left: 40px;
+  }
+
+  .stateInput {
+    width: 250px;
+    padding: 10px 15px;
+    border-radius: 10px;
+    border: 2px solid white;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    float: inline;
+    font-size: 15px;
+    margin-right: 78px;
+  }
+
+  .zipInput {
+    width: 230px;
+    padding: 10px 15px;
+    border-radius: 10px;
+    border: 2px solid white;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    float: inline;
+    font-size: 15px;
+    margin-right: 0px;
+  }
+
+  .firstNameLabel {
+    margin-right: 200px;
+    margin-left:50px;
+  }
+
+  .lastNameLabel {
+    margin-left: 210px;
+  }
+
+  .nameInput {
+    width: 400px;
+    padding: 10px 15px;
+    margin-bottom: 20px;
+    border-radius: 10px;
+    border: 2px solid white;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    margin-right: 50px;
+    margin-left: 40px;
+    float: inline;
+    font-size: 15px;
+  }
+
+  .emailLabel {
+    display: inline;
+    font-family: Nunito;
+    margin-left: 42px;
+    color: #3F3D56;
+  }
+
+  .emailInput {
+    padding: 10px 15px;
+    margin-bottom: 20px;
+    border-radius: 10px;
+    border: 2px solid white;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    margin-right: 50px;
+    margin-left: 10px;
+    font-size: 15px;
+    width: 895px;
+    margin-left: 40px;
+  }
+
+  .orderLine {
+    border: 1px solid #2B6777;
+    margin-left: 20px;
+    width: 1000px;
+    margin-top: 30px;
+  }
+
+  .paymentMethod {
+    font-family: Nunito;
+    color: #3F3D56;
+    font-size: 40px;
+    margin-left: 20px;
+    display: inline;
+    margin-right: 140px;
+  }
+
+  .input[type=radio] {
+      display: inline;
+  }
+
+  .radioLabel {
+    display: inline;
+    font-family: Nunito;
+    color: #3F3D56;
+    margin-left: 5px;
+    margin-right: 100px;
+  }
+
+  .cvvLabel {
+    margin-right: 200px;
+    margin-left: 50px;
+  }
+
+  .payZipLabel {
+    margin-left: 250px;
+  }
+
+  h5 {
+    font-family: Nunito;
+    color: #3F3D56;
+    margin-left: 40px;
+  }
