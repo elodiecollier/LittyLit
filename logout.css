@@ -198,7 +198,7 @@ p {
   width: 17%; /* Set the width of the sidebar */
   position: fixed; /* Fixed Sidebar (stay in place on scroll) */
   z-index: 1; /* Stay on top */
-  top: 106; /* Stay at the top */
+  top: 113; /* Stay at the top */
   left: 0;
   background-color: #2c6777; /* Black */
   font-family: Nunito;
