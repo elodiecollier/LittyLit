@@ -49,6 +49,16 @@ ul {
     text-decoration: none;
   }
 
+  .MyBooks img {
+    position: relative;
+    width: 54px;
+    height: 42px;
+    float: right;
+    right: 10px;
+    top: -10px;
+    
+  }
+
   .MyBooks:hover {
       opacity: 0.85;
 
