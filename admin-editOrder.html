@@ -1,0 +1,62 @@
+<!DOCTYPE>
+
+<head>
+    <link href="admin-editOrder.css" rel="stylesheet">
+    <title>LittyLit</title>
+    <link href='https://fonts.googleapis.com/css?family=Nunito' rel='stylesheet'>
+    <link href='https://fonts.googleapis.com/css?family=Girassol' rel='stylesheet'>
+</head>
+
+<body>
+    <main>
+        <ul>
+            <li><a class="active" href="home.html">LittyLit</a></li>
+            <li><a class="searchOrdersNav" href="">Search Orders</a></li>
+            <li><a class="searchUsersNav" href="">Search Users</a></li>
+            <li><a class="searchBooksNav" href="">Search Books</a></li>
+            <li><a class="myAccNav" href="admin-myAccount.html">My Account</a></li>
+            <li><a class="reportsNav" href="">Reports</a></li>
+        </ul><br>
+        <h1 style="padding-left: 85px;">Order #123 Information</h1>
+        <form action="">
+            <!-- first name, last name -->
+            <p class="firstNameLabel">First Name</p>
+            <p class="lastNameLabel">Last Name</p> <br>
+
+            <input class="nameInput" type="text" id="fname" name="fname">
+            <input class="nameInput" type="text" id="lname" name="fname"> <br>
+            <!-- email -->
+            <p class="emailLabel">Email</p> <br>
+            <input class="inputEmail" type="email" id="email" name="email"><br><br>
+
+            <p class="cityLabel2">Order ID</p>
+            <p class="stateLabel2">Confirmation Number</p>
+            <p class="dateOrderedLabel">Date Ordered</p> <br>
+
+            <input class="cityInput" type="text" id="city" name="city">
+            <input class="stateInput" type="text" id="state" name="state">
+            <input class="zipInput" type="text" id="zip" name="zip"> <br>
+
+            <!-- address -->
+            <p class="addressLabel">Shipping Address</p> <br>
+            <input class="addressInput" type="address" id="email" name="address"><br><br>
+            <!-- more address -->
+
+            <p class="cityLabel">City</p>
+            <p class="stateLabel">State</p>
+            <p class="zipLabel">Zip Code</p> <br>
+
+            <input class="cityInput" type="text" id="city" name="city">
+            <input class="stateInput" type="text" id="state" name="state">
+            <input class="zipInput" type="text" id="zip" name="zip"> <br>
+
+            <div class="deleteDiv">
+                <a class="deleteAcc" href="">Delete Order</a>
+                <input class="submit" type="submit" value="Save Changes" style="margin-right: 215px;">
+
+            </div>
+        </form>
+    </main>
+</body>
+
+</html>
