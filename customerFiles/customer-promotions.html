@@ -1,0 +1,100 @@
+<!DOCTYPE>
+<head>
+    <link href="customer-promotions.css" rel="stylesheet">
+    <title>LittyLit</title>
+    <link
+        href='https://fonts.googleapis.com/css?family=Nunito:400,700,400italic,700italic''
+        rel='stylesheet'>
+    <link
+        href='https://fonts.googleapis.com/css?family=Girassol:400,700,400italic,700italic''
+        rel='stylesheet'>
+</head>
+
+<html>
+    <body>
+        <main>
+            <ul>
+                <li><a class="homeNav" href="home.html">LittyLit</a></li>
+                <li><a class="browseNav" href="customer-browseCatalog.html">Browse</a></li>
+                <li><a class="myAccNav" href="customer-myAccount.html">My Account</a></li>
+                <li><a class="cartNav" href="customer-cart.html"><img
+                            class="cartImg"
+                            src="./CustCart.png"></a></li>
+            </ul>
+            <div class="sidenav">
+                <div class="avatar">
+                    <img
+                        src="https://cdn-icons-png.flaticon.com/512/147/147142.png"
+                        width="45px"
+                        height="45px"
+                        style="vertical-align: middle;">
+                </div>
+                <div class="nametag">
+                    <div class="username">
+                        <span style="vertical-align: top;">John John-John</span>
+                    </div>
+                    <div class="role">
+                        <span style="vertical-align: bottom;">Customer</span>
+                    </div>
+                </div>
+                <div>
+                    <hr class="rounded">
+                    <a href="customer-editMyAccount.html">Account Details</a>
+                    <a href="customer-promotions.html">Promotions</a>
+                    <a href="customer-logout.html">Logout</a>
+                </div>
+            </div>
+            <div class="right">
+                <h1>Sign up today!</h1>
+                <p>Want to receive the lastest news and promo codes from
+                        LittyLit?
+                        Subscribe to our newsletter today!</p>
+            </div>
+            <form class="form" action="">
+                <div id="container" style="width:50%; vertical-align: middle;">
+                    <div id="left" style="float:left; width: 15%; padding-top:
+                        1%;">
+                        <p>
+                            Email
+                        </p>
+                    </div>
+                    <div id="middle" style="float:left; width: 40%; padding-top:
+                        2.7%; padding-right: 7%;">
+                        <input type="email" id="email" class="emailInput"
+                            pattern=".+@globex\.com" size="30"
+                            required>
+                    </div>
+                    <div id="right" style="float:left; width: 20%; padding-top:
+                        3%; padding-left: 12%;">
+                        <button onclick="window.location.href=''"
+                            class="subscribeButton">Subscribe</button>
+                    </div>
+                </div>
+            </form>
+            <div class="right">
+                <p>Want to unsubscribe?</p>
+            </div>
+            <form class="form" action="">
+                <div id="container" style="width:50%; vertical-align: middle;">
+                    <div id="left" style="float:left; width: 15%; padding-top:
+                        1%;">
+                        <p>
+                            Email
+                        </p>
+                    </div>
+                    <div id="middle" style="float:left; width: 40%; padding-top:
+                        2.7%; padding-right: 7%;">
+                        <input type="email" id="email" class="emailInput"
+                            pattern=".+@globex\.com" size="30"
+                            required>
+                    </div>
+                    <div id="right" style="float:left; width: 20%; padding-top:
+                        3%; padding-left: 12%;">
+                        <button onclick="window.location.href=''"
+                            class="subscribeButton">Unsubscribe</button>
+                    </div>
+                </div>
+            </form>
+        </main>
+    </body>
+</html>

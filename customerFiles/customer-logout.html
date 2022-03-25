@@ -1,0 +1,50 @@
+<!DOCTYPE>
+
+<head>
+    <link href="customer-logout.css" rel="stylesheet">
+    <title>LittyLit</title>
+    <link href='https://fonts.googleapis.com/css?family=Nunito' rel='stylesheet'>
+    <link href='https://fonts.googleapis.com/css?family=Girassol' rel='stylesheet'>
+</head>
+
+<html>
+
+<body>
+    <main>
+        <ul>
+            <li><a class="homeNav" href="home.html">LittyLit</a></li>
+            <li><a class="browseNav" href="customer-browseCatalog.html">Browse</a></li>
+            <li><a class="myAccNav" href="customer-myAccount.html">My Account</a></li>
+            <li><a class="cartNav" href="customer-cart.html"><img class="cartImg" src="CustCart.png"></a></li>
+        </ul>
+        <div class="sidenav">
+            <div class="avatar">
+                <img
+                    src="https://cdn-icons-png.flaticon.com/512/147/147142.png"
+                    width="45px"
+                    height="45px"
+                    style="vertical-align: middle;">
+            </div>
+            <div class="nametag">
+                <div class="username">
+                    <span style="vertical-align: top;">John John-John</span>
+                </div>
+                <div class="role">
+                    <span style="vertical-align: bottom;">Customer</span>
+                </div>
+            </div>
+            <div>
+                <hr class="rounded">
+                <a href="customer-editMyAccount.html">Account Details</a>
+                <a href="customer-promotions.html">Promotions</a>
+                <a href="customer-logout.html">Logout</a>
+            </div>
+        </div>
+        <div class="right">
+            <h1>Are you sure you want to logout?</h1>
+        </div>
+        <button onclick="window.location.href='login.html'" class="logoutButton">Logout</button>
+    </main>
+</body>
+
+</html>

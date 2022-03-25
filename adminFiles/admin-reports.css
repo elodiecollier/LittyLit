@@ -1,0 +1,227 @@
+body {
+  background: #ffffff;
+  margin: 0;
+}
+
+
+ul {
+  list-style-type: none;
+  padding: 0;
+  overflow: hidden;
+  background-color: #ffffff;
+  margin : 0 !important;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+
+li {
+  float: left;
+  
+}
+
+li a {
+  display: block;
+  color: #3F3D56;
+  text-align: center;
+  padding: 20px;
+  text-decoration: none;
+  font-family: Girassol;
+  font-size: 55px;
+  margin: 0;
+}
+
+.homeNav {
+  display: block;
+  color: #3F3D56;
+  text-align: center;
+  padding: 20px;
+  text-decoration: none;
+  font-family: Girassol;
+  font-weight: bold;
+  font-size: 55px;
+  margin: 0;
+}
+
+.searchOrdersNav {
+  display: block;
+  color: #3F3D56;
+  text-align: center;
+  padding: 20px;
+  text-decoration: none;
+  font-family: Nunito;
+  font-size: 25px;
+  margin-left: 50px;
+  padding-top: 36px;
+}
+
+ .searchOrdersNav:hover {
+    opacity: 0.85;
+}
+
+.searchUsersNav {
+  display: block;
+  color: #3F3D56;
+  text-align: center;
+  padding: 20px;
+  text-decoration: none;
+  font-family: Nunito;
+  font-size: 25px;
+  margin-left: 50px;
+  padding-top: 36px;
+}
+
+.searchUsersNav:hover {
+  opacity: 0.85;
+}
+
+.searchBooksNav {
+  display: block;
+  color: #3F3D56;
+  text-align: center;
+  padding: 20px;
+  text-decoration: none;
+  font-family: Nunito;
+  font-size: 25px;
+  margin-left: 50px;
+  padding-top: 36px;
+}
+
+.searchBooksNav:hover {
+  opacity: 0.85;
+}
+
+.myAccNav {
+  display: block;
+  color: #3F3D56;
+  text-align: center;
+  padding: 20px;
+  text-decoration: none;
+  font-family: Nunito;
+  font-size: 25px;
+  margin-left: 50px;
+  padding-top: 36px;
+}
+
+.myAccNav:hover {
+  opacity: 0.85;
+}
+
+.reportsNav {
+  display: block;
+  color: #3F3D56;
+  text-align: center;
+  padding: 20px;
+  text-decoration: none;
+  font-family: Nunito;
+  font-size: 25px;
+  margin-left: 50px;
+  padding-top: 36px;
+}
+
+.reportsNav:hover {
+  opacity: 0.85;
+}
+  .top {
+      width: 1200px;
+      height: 200px;
+      background-color: rgb(165, 194, 216, 0.6);
+      margin-left: 120px;
+      margin-top: 50px;
+      border-radius: 10px;
+      box-shadow: 3px 4px 4px 2px rgba(0, 0, 0, 0.4);
+  }
+
+
+  h1 {
+      display: inline-block;
+      color: #3F3D56;
+      font-family: Nunito;
+      margin-left: 30px;
+      margin-right: 120px;
+      margin-top: 20px;
+  }
+
+  .totalSales {
+    display: inline-block;
+    color: #3F3D56;
+    font-family: Nunito;
+    margin-right: 60px;
+    margin-left: 40px;
+  }
+
+  .totalBooks {
+    display: inline;
+    color: #3F3D56;
+    font-family: Nunito;
+  }
+
+  .span1 {
+      font-size: 30px;
+  }
+
+  .span2 {
+    font-size: 30px;
+}
+
+button {
+    font-family: Nunito;
+    color: #ffffff;
+    background-color: #2B6777;
+    border-radius: 10px;
+    border-color: #2B6777;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    padding: 15px 32px;
+    font-size: 20px;
+    border: 2px solid #2B6777;
+    margin-left: 80px;
+    font-weight: bold;
+    margin-top: 15px;
+}
+
+button:hover {
+    opacity: 0.8;
+}
+
+/* eventually make buttons change color depending on which button was clicked last.
+If one button is clicked, then that button turns purple, all other buttons stay or revert to blue. 
+Purple button stays purple until another button is clicked */
+
+.bottom {
+      width: 1200px;
+      height: 400px;
+      background-color: rgb(165, 194, 216, 0.6);
+      margin-left: 120px;
+      margin-top: 50px;
+      border-radius: 10px;
+      box-shadow: 3px 4px 4px 2px rgba(0, 0, 0, 0.4);  
+      font-family: Nunito;
+      color: #3F3D56;
+}
+
+h3 {
+    text-align: center;
+    text-decoration: underline;
+}
+
+.title {
+    width: 400px;
+    display: inline-block;
+    margin-right: 100px;
+    margin-left: 30px;
+}
+
+.ISBN {
+    width: 150px;
+    display: inline-block;
+    margin-right: 150px;
+    text-align: center;
+}
+
+.numbSold {
+    width: 250px;
+    display: inline-block;
+    text-align: center;
+}
+
+
+
+ 

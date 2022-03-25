@@ -1,0 +1,127 @@
+<!DOCTYPE>
+
+<head>
+    <link href="admin-editMyAccount.css" rel="stylesheet">
+    <title>LittyLit</title>
+    <link href='https://fonts.googleapis.com/css?family=Nunito:400,700,400italic,700italic' rel='stylesheet'>
+    <link href='https://fonts.googleapis.com/css?family=Girassol' rel='stylesheet'>
+</head>
+
+<body>
+    <main>
+        <ul>
+            <li><a class="homeNav" href="home.html">LittyLit</a></li>
+            <li><a class="searchOrdersNav" href="admin-searchOrders.html">Search Orders</a></li>
+            <li><a class="searchUsersNav" href="admin-searchUsers.html">Search Users</a></li>
+            <li><a class="searchBooksNav" href="admin-searchBooks.html">Search Books</a></li>
+            <li><a class="myAccNav" href="admin-myAccount.html">My Account</a></li>
+            <li><a class="reportsNav" href="admin-reports.html">Reports</a></li>
+          </ul>
+          <div class="sidenav">
+            <div class="avatar">
+                <img
+                    src="https://cdn-icons-png.flaticon.com/512/147/147142.png"
+                    width="45px"
+                    height="45px"
+                    style="vertical-align: middle;">
+            </div>
+            <div class="nametag">
+                <div class="username">
+                    <span style="vertical-align: top;">John John-John</span>
+                </div>
+                <div class="role">
+                    <span style="vertical-align: bottom;">Administrator</span>
+                </div>
+            </div>
+            <div>
+                <!--  -->
+                <!--  -->
+                <hr class="white">
+                <a href="admin-editMyAccount.html">Account Details</a>
+                <a href="admin-logout.html">Logout</a>
+            </div>
+        </div>
+        <div style="padding-top: 9%; padding-left: 0%;">
+            <h1>Welcome, John</h1>
+            <form action="">
+                <div class='parent flex-parent' style="margin-top: -17px;">
+                    <div class='child flex-child' style="padding-left: 2%;">
+                        <h3 style="padding-left: 12%;"><strong>First Name</strong></h3>
+                        <input class="nameInput" type="text" id="fname" name="fname" value="John">
+                    </div>
+                    <div class='child flex-child'>
+                        <h3 style="padding-left: 0%;"><strong>Last Name</strong></h3>
+                        <input class="nameInputRight" type="text" id="lname" name="fname" value="John-John">
+                    </div>
+                </div>
+                <div class='parent' style="margin-top: -17px;">
+                    <h3 style="padding-left: 8%;"><strong>Email</strong></h3>
+                    <input class="inputEmail" type="text" id="lname" name="fname" value="johnjohnjohn@gmail.com"
+                        style="margin-left: 96px; margin-top: 8px;">
+                </div>
+                <div class='parent flex-parent' style="margin-top: -17px;">
+                    <div class='child flex-child' style="padding-left: 2%;">
+                        <h3 style="padding-left: 12%;"><strong>Username</strong></h3>
+                        <input class="nameInput" type="text" id="fname" name="fname" value="johnjohnjohn">
+                    </div>
+                    <div class='child flex-child'>
+                        <h3 style="padding-left: 0%;"><strong>Password</strong></h3>
+                        <input class="passInput" type="text" id="lname" name="fname" value="**********">
+                    </div>
+                </div>
+                <div class='parent flex-parent' style="margin-top: -17px;">
+                    <div class='child flex-child' style="padding-left: 2%; margin-top: -px;">
+                        <h3 style="padding-left: 12%; vertical-align: bottom;"><strong>Birthday</strong></h3>
+                        <input class="nameInput" type="text" id="fname" name="fname" value="2/28/2001">
+                    </div>
+                    <div class='child flex-child'>
+                        <div class="passReq" style="margin-top: -70px;">
+                            <h3>Your password must include:</h3>
+                            <br>
+                            <h4>- at least 8 characters</h4>
+                            <h4>- at least one letter</h4>
+                            <h4>- at least one number</h4>
+                            </h4>
+                        </div>
+                    </div>
+                </div>
+                <!--  -->
+                <!--  -->
+                <hr class="blue">
+                <div class='parent' style="margin-top: -17px;">
+                    <h3 style="padding-left: 8%;"><strong>Street Address</strong></h3>
+                    <input class="addressInput" type="text" id="lname" name="fname"
+                        style="margin-left: 96px; margin-top: 8px;" value="911 Mockingbird Lane">
+                </div>
+                <div class='parent flex-parent' style="margin-top: -17px;">
+                    <div class='child flex-child' style="padding-left: 2%;">
+                        <h3 style="padding-left: 20%;"><strong>City</strong></h3>
+                        <input class="cityInput" type="text" id="fname" name="fname"
+                            style="margin-left: 80px; margin-top: 8px;" value="Griffin">
+                    </div>
+                    <div class='child flex-child'>
+                        <h3 style="padding-left: 3%;"><strong>State</strong></h3>
+                        <input class="stateInput" type="text" id="lname" name="fname" style="margin-top: 8px;"
+                            value="GA">
+                    </div>
+                    <div class='child flex-child'>
+                        <h3 style="margin-left: -260px;"><strong>Zip Code</strong></h3>
+                        <input class="zipInput" type="text" id="lname" name="fname"
+                            style="margin-top: 8px; margin-left: -250px;" value="30224">
+                    </div>
+                </div>
+                <div class='parent flex-parent' style="margin-top: 100px;">
+                    <div class='child flex-child' style="padding-left: 2%;">
+                        <a class="delAcc" href="">Delete Account</a>
+                    </div>
+                    <div class='child flex-child'>
+                        <button onclick="window.location.href='login.html'" class="button">Save
+                            Changes</button>
+                    </div>
+                </div>
+            </form>
+        </div>
+    </main>
+</body>
+
+</html>
