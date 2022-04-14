@@ -2,47 +2,91 @@
 
 <head>
     <link href="admin-logout.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css">
     <title>Welcome to LittyLit</title>
-    <link href='https://fonts.googleapis.com/css?family=Nunito' rel='stylesheet'>
-    <link href='https://fonts.googleapis.com/css?family=Girassol' rel='stylesheet'>
+    <link href='https://fonts.googleapis.com/css?family=Nunito:400,700,400italic,700italic' rel='stylesheet'>
+    <link href='https://fonts.googleapis.com/css?family=Girassol:400,700,400italic,700italic' rel='stylesheet'>
 </head>
 
 <html>
 
 <body>
     <main>
-        <ul>
-            <li><a class="active" href="home.html">LittyLit</a></li>
-            <li><a class="searchOrdersNav" href="admin-searchOrders.html">Search Orders</a></li>
-            <li><a class="searchUsersNav" href="admin-searchUsers.html">Search Users</a></li>
-            <li><a class="searchBooksNav" href="admin-searchBooks.html">Search Books</a></li>
-            <li><a class="myAccNav" href="admin-myAccount.html">My Account</a></li>
-            <li><a class="reportsNav" href="admin-reports.html">Reports</a></li>
-        </ul>
-        <div class="sidenav">
-            <div class="avatar">
-                <img src="https://cdn-icons-png.flaticon.com/512/147/147142.png" width="45px" height="45px"
-                    style="vertical-align: middle;">
-            </div>
-            <div class="nametag">
-                <div class="username">
-                    <span style="vertical-align: top;">John John-John</span>
+        <nav class="navbar navbar-expand-lg navbar-light bg-light">
+            <a class="navbar-brand pl-4" href="#" style="font-size: 60px; color: #3F3D56">LittyLit</a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup"
+                aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse justify-content-end" id="navbarNavAltMarkup">
+                <div class="navbar-nav d-lg-flex align-items-center mt-3">
+                    <a class="nav-item h-100 nav-link" href="#">
+                        <h5>Search Orders</h5>
+                    </a>
+                    <a class="nav-item h-100 nav-link" href="#">
+                        <h5>Search Users</h5>
+                    </a>
+                    <a class="nav-item h-100 nav-link" href="#">
+                        <h5>Search Books</h5>
+                    </a>
+                    <a class="nav-item h-100 nav-link" href="#">
+                        <h5>My Account</h5>
+                    </a>
+                    <a class="nav-item h-100 nav-link" href="#">
+                        <h5>Reports</h5>
+                    </a>
                 </div>
-                <div class="role">
-                    <span style="vertical-align: bottom;">Administrator</span>
-                </div>
             </div>
-            <div>
-                <hr class="rounded">
-                <a href="admin-editMyAccount.html">Account Details</a>
-                <a href="admin-logout.html">Logout</a>
+        </nav>
+
+        <div class="container-fluid text-center">
+            <div class="row h-30 content">
+                <div class="col-sm-2 sidenav justify-content-center" style="background-color: #2C6777;">
+                    <div class="row align-items-center bottom-margin">
+                        <div class="avatarMargin col-1">
+                            <div class="row align-items-center d-flex float-right">
+                                <img src="https://cdn-icons-png.flaticon.com/512/147/147142.png" width="45px"
+                                    height="45px" style="vertical-align: middle;">
+                            </div>
+                        </div>
+                        <div class="col-8 pl-2">
+                            <div class="row">
+                                <div class="col-12 mt-3 d-flex float-left bottom-margin nowrap">
+                                    <h5>Andrew Humble</h5>
+                                </div>
+                                <div class="col-12 d-flex float-left">
+                                    <p>Administrator</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <hr style="background-color: lightgrey">
+                    <h4 class="sidebar"><a href="#">
+                            Account Details
+                        </a></h4>
+                    <h4 class="sidebar"><a href="#">
+                            Logout
+                        </a></h4>
+                </div>
+                <div class="col-sm-10 text-left">
+                    <div class="ml-3 mt-5">
+                        <h3>Are you sure you want to log out?</h3>
+                        <button type="button" class="btn-lg btn-primary mt-3"
+                            style="background-color: #cedee4; border-width: 0px;">
+                            <strong style="color: #3f3d56">Logout</strong>
+                        </button>
+                    </div>
+                </div>
             </div>
         </div>
-        <div class="right">
-            <h1>Are you sure you want to logout?</h1>
-        </div>
-        <button onclick="window.location.href='login.html'" class="logoutButton">Logout</button>
+
+        <footer class="container-fluid text-center">
+            <p>Footer Text</p>
+        </footer>
     </main>
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.0/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js"></script>
 </body>
 
 </html>
