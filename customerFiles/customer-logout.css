@@ -55,13 +55,6 @@
   margin-left: 2.2rem;
 }
 
-/* Set black background color, white text and some padding */
-footer {
-  background-color: #555;
-  color: white;
-  padding: 15px;
-}
-
 /* On small screens, set height to 'auto' for sidenav and grid */
 @media screen and (max-width: 767px) {
   .sidenav {
@@ -120,4 +113,16 @@ a.nav-item {
 
 .navbar .navbar-collapse {
   text-align: center;
+}
+
+.footer {
+  background-color: lightgrey !important;
+  max-height: 3rem !important;
+  padding: 15px;
+}
+
+.footer p {
+  font-size: 14px !important;
+  font-family: Nunito !important;
+  color: darkgrey !important;
 }
