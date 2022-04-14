@@ -2,125 +2,175 @@
 
 <head>
     <link href="customer-editMyAccount.css" rel="stylesheet">
-    <title>LittyLit</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css">
+    <title>Welcome to LittyLit</title>
     <link href='https://fonts.googleapis.com/css?family=Nunito:400,700,400italic,700italic' rel='stylesheet'>
-    <link href='https://fonts.googleapis.com/css?family=Girassol' rel='stylesheet'>
+    <link href='https://fonts.googleapis.com/css?family=Girassol:400,700,400italic,700italic' rel='stylesheet'>
 </head>
+
+<html>
 
 <body>
     <main>
-        <ul>
-            <li><a class="homeNav" href="home.html">LittyLit</a></li>
-            <li><a class="browseNav" href="customer-browseCatalog.html">Browse</a></li>
-            <li><a class="myAccNav" href="customer-myAccount.html">My Account</a></li>
-            <li><a class="cartNav" href="customer-cart.html"><img class="cartImg" src="CustCart.png"></a></li>
-        </ul>
-        <div class="sidenav">
-            <div class="avatar">
-                <img
-                    src="https://cdn-icons-png.flaticon.com/512/147/147142.png"
-                    width="45px"
-                    height="45px"
-                    style="vertical-align: middle;">
-            </div>
-            <div class="nametag">
-                <div class="username">
-                    <span style="vertical-align: top;">John John-John</span>
-                </div>
-                <div class="role">
-                    <span style="vertical-align: bottom;">Customer</span>
+
+        <!-- Navbar -->
+        <nav class="navbar navbar-expand-lg navbar-light bg-light">
+            <a class="navbar-brand pl-4" href="#" style="font-size: 60px; color: #3F3D56">LittyLit</a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup"
+                aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse justify-content-end" id="navbarNavAltMarkup">
+                <div class="navbar-nav d-lg-flex align-items-center mt-3">
+                    <a class="nav-item h-100 nav-link" href="#">
+                        <h5>Browse</h5>
+                    </a>
+                    <a class="nav-item h-100 nav-link" href="#">
+                        <h5>Account</h5>
+                    </a>
+                    <a class="nav-item h-100 mb-3 nav-link" href="#"><img src="../images/cart.png" height="60px"
+                            width="60px"></a>
                 </div>
             </div>
-            <div>
-                <!--  -->
-                <!--  -->
-                <hr class="white">
-                <a href="customer-editMyAccount.html">Account Details</a>
-                <a href="customer-promotions.html">Promotions</a>
-                <a href="customer-logout.html">Logout</a>
-            </div>
-        </div>
-        <div style="padding-top: 9%; padding-left: 0%;">
-            <h1>Welcome, John</h1>
-            <form action="">
-                <div class='parent flex-parent' style="margin-top: -17px;">
-                    <div class='child flex-child' style="padding-left: 2%;">
-                        <h3 style="padding-left: 12%;"><strong>First Name</strong></h3>
-                        <input class="nameInput" type="text" id="fname" name="fname" value="John">
+        </nav>
+
+        <!-- Page Content -->
+        <div class="container-fluid text-center">
+            <div class="row h-30 content">
+
+                <!-- Side Bar -->
+                <div class="col-sm-2 sidenav justify-content-center" style="background-color: #2C6777;">
+                    <div class="row align-items-center bottom-margin">
+                        <div class="avatarMargin col-1">
+                            <div class="row align-items-center d-flex float-right">
+                                <img src="https://cdn-icons-png.flaticon.com/512/147/147142.png" width="45px"
+                                    height="45px" style="vertical-align: middle;">
+                            </div>
+                        </div>
+                        <div class="col-8 pl-2">
+                            <div class="row">
+                                <div class="col-12 mt-3 d-flex float-left bottom-margin nowrap">
+                                    <h5>Andrew Humble</h5>
+                                </div>
+                                <div class="col-12 d-flex float-left">
+                                    <p>Customer</p>
+                                </div>
+                            </div>
+                        </div>
                     </div>
-                    <div class='child flex-child'>
-                        <h3 style="padding-left: 0%;"><strong>Last Name</strong></h3>
-                        <input class="nameInputRight" type="text" id="lname" name="fname" value="John-John">
-                    </div>
+                    <hr style="background-color: lightgrey">
+                    <h4 class="sidebar"><a href="#">
+                            Account Details
+                        </a></h4>
+                    <h4 class="sidebar"><a href="#">
+                            Promotions
+                        </a></h4>
+                    <h4 class="sidebar"><a href="#">
+                            Logout
+                        </a></h4>
                 </div>
-                <div class='parent' style="margin-top: -17px;">
-                    <h3 style="padding-left: 8%;"><strong>Email</strong></h3>
-                    <input class="inputEmail" type="text" id="lname" name="fname" value="johnjohnjohn@gmail.com"
-                        style="margin-left: 96px; margin-top: 8px;">
-                </div>
-                <div class='parent flex-parent' style="margin-top: -17px;">
-                    <div class='child flex-child' style="padding-left: 2%;">
-                        <h3 style="padding-left: 12%;"><strong>Username</strong></h3>
-                        <input class="nameInput" type="text" id="fname" name="fname" value="johnjohnjohn">
-                    </div>
-                    <div class='child flex-child'>
-                        <h3 style="padding-left: 0%;"><strong>Password</strong></h3>
-                        <input class="passInput" type="text" id="lname" name="fname" value="**********">
-                    </div>
-                </div>
-                <div class='parent flex-parent' style="margin-top: -17px;">
-                    <div class='child flex-child' style="padding-left: 2%; margin-top: -px;">
-                        <h3 style="padding-left: 12%; vertical-align: bottom;"><strong>Birthday</strong></h3>
-                        <input class="nameInput" type="text" id="fname" name="fname" value="2/28/2001">
-                    </div>
-                    <div class='child flex-child'>
-                        <div class="passReq" style="margin-top: -70px;">
-                            <h3>Your password must include:</h3>
-                            <br>
-                            <h4>- at least 8 characters</h4>
-                            <h4>- at least one letter</h4>
-                            <h4>- at least one number</h4>
-                            </h4>
+
+                <!-- Main Page Portion -->
+                <div class="col-sm-10 text-left">
+                    <div class="ml-4 mt-5">
+                        <h1>Welcome, Andrew</h1>
+                        <div class="pt-2 row">
+                            <div class="col-4">
+                                <div class="pt-2 form-group">
+                                    <label for="firstName">First Name</label>
+                                    <input type="text" class="form-control" id="firstName" name="firstName"
+                                        placeholder="Andrew">
+                                </div>
+                            </div>
+                            <div class="col-4">
+                                <div class="pl-2 pt-2 form-group">
+                                    <label for="lastName">Last Name</label>
+                                    <input type="text" class="form-control" id="lastName" name="lastName"
+                                        placeholder="Humble">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="pt-2 row">
+                            <div class="col-8 t-2 form-group">
+                                <label for="email">Email</label>
+                                <input type="email" class="form-control" id="email" placeholder="johndoe@email.com">
+                            </div>
+                        </div>
+                        <div class="pt-2 row">
+                            <div class="col-4">
+                                <div class="pt-2 form-group">
+                                    <label for="username">Username</label>
+                                    <input type="text" class="form-control" id="username" name="username"
+                                        placeholder="andrewhumble">
+                                </div>
+                            </div>
+                            <div class="col-4">
+                                <div class="pl-2 pt-2 form-group">
+                                    <label for="password">Password</label>
+                                    <input type="password" class="form-control" id="password" name="password"
+                                        placeholder="&#9679;&#9679;&#9679;&#9679;&#9679;&#9679;&#9679;&#9679;&#9679;&#9679;&#9679;&#9679;&#9679;&#9679;&#9679;&#9679;&#9679;&#9679;&#9679;&#9679;&#9679;&#9679;">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="pt-2 row">
+                            <div class="col-4 t-2 form-group">
+                                <label for="birthday">Birthday</label>
+                                <input type="date" class="form-control" id="birthday">
+                            </div>
+                        </div>
+                        <hr style="background-color: lightgrey">
+                        <div class="pt-2 row">
+                            <div class="col-8 t-2 form-group">
+                                <label for="address">Street Address</label>
+                                <input type="address" class="form-control" id="address"
+                                    placeholder="327 S. Milledge Ave.">
+                            </div>
+                        </div>
+                        <div class="pt-2 mb-4 row">
+                            <div class="col-3">
+                                <div class="pt-2 form-group">
+                                    <label for="city">City</label>
+                                    <input type="text" class="form-control" id="city" name="city" placeholder="Athens">
+                                </div>
+                            </div>
+                            <div class="col-2">
+                                <div class="pt-2 form-group">
+                                    <label for="state">State</label>
+                                    <input type="state" class="form-control" id="state" name="state" placeholder="GA">
+                                </div>
+                            </div>
+                            <div class="col-3">
+                                <div class="pl-2 pt-2 form-group">
+                                    <label for="password">Zip Code</label>
+                                    <input type="text" class="form-control" id="zip" name="zip" placeholder="30605">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-6 float-left">
+                                <a class="text-left" href="#">
+                                    <u style="text-decoration-color:lightcoral">
+                                        <h6 class="mt-4 mb-1" style="color: lightcoral">Delete Account</h6>
+                                    </u>
+                                </a>
+                            </div>
+                            <div class="col-6 mt-2 float-right">
+                                <button type="submit" class="btn btn-primary pr-6">Save Changes</button>
+                            </div>
                         </div>
                     </div>
                 </div>
-                <!--  -->
-                <!--  -->
-                <hr class="blue">
-                <div class='parent' style="margin-top: -17px;">
-                    <h3 style="padding-left: 8%;"><strong>Street Address</strong></h3>
-                    <input class="addressInput" type="text" id="lname" name="fname"
-                        style="margin-left: 96px; margin-top: 8px;" value="911 Mockingbird Lane">
-                </div>
-                <div class='parent flex-parent' style="margin-top: -17px;">
-                    <div class='child flex-child' style="padding-left: 2%;">
-                        <h3 style="padding-left: 20%;"><strong>City</strong></h3>
-                        <input class="cityInput" type="text" id="fname" name="fname"
-                            style="margin-left: 80px; margin-top: 8px;" value="Griffin">
-                    </div>
-                    <div class='child flex-child'>
-                        <h3 style="padding-left: 3%;"><strong>State</strong></h3>
-                        <input class="stateInput" type="text" id="lname" name="fname" style="margin-top: 8px;"
-                            value="GA">
-                    </div>
-                    <div class='child flex-child'>
-                        <h3 style="margin-left: -260px;"><strong>Zip Code</strong></h3>
-                        <input class="zipInput" type="text" id="lname" name="fname"
-                            style="margin-top: 8px; margin-left: -250px;" value="30224">
-                    </div>
-                </div>
-                <div class='parent flex-parent' style="margin-top: 100px;">
-                    <div class='child flex-child' style="padding-left: 2%;">
-                        <a class="delAcc" href="">Delete Account</a>
-                    </div>
-                    <div class='child flex-child'>
-                        <button onclick="window.location.href='login.html'" class="button">Save
-                            Changes</button>
-                    </div>
-                </div>
-            </form>
+            </div>
         </div>
+        </div>
+        </div>
+        <footer class="footer pl-4">
+            <p>CSCI 4050 Final Project by Andrew Humble, Elodie Collier, Nisha Rajendra, and Manmeet Gill.</p>
+        </footer>
     </main>
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.0/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js"></script>
 </body>
 
 </html>

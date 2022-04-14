@@ -1,100 +1,118 @@
 <!DOCTYPE>
+
 <head>
     <link href="customer-promotions.css" rel="stylesheet">
-    <title>LittyLit</title>
-    <link
-        href='https://fonts.googleapis.com/css?family=Nunito:400,700,400italic,700italic''
-        rel='stylesheet'>
-    <link
-        href='https://fonts.googleapis.com/css?family=Girassol:400,700,400italic,700italic''
-        rel='stylesheet'>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css">
+    <title>Welcome to LittyLit</title>
+    <link href='https://fonts.googleapis.com/css?family=Nunito:400,700,400italic,700italic' rel='stylesheet'>
+    <link href='https://fonts.googleapis.com/css?family=Girassol:400,700,400italic,700italic' rel='stylesheet'>
 </head>
 
 <html>
-    <body>
-        <main>
-            <ul>
-                <li><a class="homeNav" href="home.html">LittyLit</a></li>
-                <li><a class="browseNav" href="customer-browseCatalog.html">Browse</a></li>
-                <li><a class="myAccNav" href="customer-myAccount.html">My Account</a></li>
-                <li><a class="cartNav" href="customer-cart.html"><img
-                            class="cartImg"
-                            src="./images/ustCart.png"></a></li>
-            </ul>
-            <div class="sidenav">
-                <div class="avatar">
-                    <img
-                        src="https://cdn-icons-png.flaticon.com/512/147/147142.png"
-                        width="45px"
-                        height="45px"
-                        style="vertical-align: middle;">
-                </div>
-                <div class="nametag">
-                    <div class="username">
-                        <span style="vertical-align: top;">John John-John</span>
-                    </div>
-                    <div class="role">
-                        <span style="vertical-align: bottom;">Customer</span>
-                    </div>
-                </div>
-                <div>
-                    <hr class="rounded">
-                    <a href="customer-editMyAccount.html">Account Details</a>
-                    <a href="customer-promotions.html">Promotions</a>
-                    <a href="customer-logout.html">Logout</a>
+
+<body>
+    <main>
+
+        <!-- Navbar -->
+        <nav class="navbar navbar-expand-lg navbar-light bg-light">
+            <a class="navbar-brand pl-4" href="#" style="font-size: 60px; color: #3F3D56">LittyLit</a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup"
+                aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse justify-content-end" id="navbarNavAltMarkup">
+                <div class="navbar-nav d-lg-flex align-items-center mt-3">
+                    <a class="nav-item h-100 nav-link" href="#">
+                        <h5>Browse</h5>
+                    </a>
+                    <a class="nav-item h-100 nav-link" href="#">
+                        <h5>Account</h5>
+                    </a>
+                    <a class="nav-item h-100 mb-3 nav-link" href="#"><img src="../images/cart.png" height="60px"
+                            width="60px"></a>
                 </div>
             </div>
-            <div class="right">
-                <h1>Sign up today!</h1>
-                <p>Want to receive the lastest news and promo codes from
-                        LittyLit?
-                        Subscribe to our newsletter today!</p>
-            </div>
-            <form class="form" action="">
-                <div id="container" style="width:50%; vertical-align: middle;">
-                    <div id="left" style="float:left; width: 15%; padding-top:
-                        1%;">
-                        <p>
-                            Email
-                        </p>
+        </nav>
+
+        <!-- Page Content -->
+        <div class="container-fluid text-center">
+            <div class="row h-30 content">
+
+                <!-- Side Bar -->
+                <div class="col-sm-2 sidenav justify-content-center" style="background-color: #2C6777;">
+                    <div class="row align-items-center bottom-margin">
+                        <div class="avatarMargin col-1">
+                            <div class="row align-items-center d-flex float-right">
+                                <img src="https://cdn-icons-png.flaticon.com/512/147/147142.png" width="45px"
+                                    height="45px" style="vertical-align: middle;">
+                            </div>
+                        </div>
+                        <div class="col-8 pl-2">
+                            <div class="row">
+                                <div class="col-12 mt-3 d-flex float-left bottom-margin nowrap">
+                                    <h5>Andrew Humble</h5>
+                                </div>
+                                <div class="col-12 d-flex float-left">
+                                    <p>Customer</p>
+                                </div>
+                            </div>
+                        </div>
                     </div>
-                    <div id="middle" style="float:left; width: 40%; padding-top:
-                        2.7%; padding-right: 7%;">
-                        <input type="email" id="email" class="emailInput"
-                            pattern=".+@globex\.com" size="30"
-                            required>
-                    </div>
-                    <div id="right" style="float:left; width: 20%; padding-top:
-                        3%; padding-left: 12%;">
-                        <button onclick="window.location.href=''"
-                            class="subscribeButton">Subscribe</button>
+                    <hr style="background-color: lightgrey">
+                    <h4 class="sidebar"><a href="#">
+                            Account Details
+                        </a></h4>
+                    <h4 class="sidebar"><a href="#">
+                            Promotions
+                        </a></h4>
+                    <h4 class="sidebar"><a href="#">
+                            Logout
+                        </a></h4>
+                </div>
+
+                <!-- Main Page Portion -->
+                <div class="col-sm-10 text-left">
+                    <div class="ml-3 mt-5">
+                        <h1>Sign Up Today!</h1>
+                        <h5 class="pt-2">Want to receive the lastest news and promo codes from LittyLit? Subscribe to
+                            our newsletter today!</h5>
+                        <div class="row pt-2">
+                            <div class="col-sm-6">
+                                <form class="form-group">
+                                    <label for="email">Email</label>
+                                    <input type="email" class="form-control" id="email" placeholder="johndoe@email.com">
+                                </form>
+                                <div class="text-right">
+                                    <button type="submit" class="btn btn-primary text-right">Subscribe</button>
+                                </div>
+                            </div>
+                        </div>
+                        <h3 class="pt-5">Need to unsubscribe?</h3>
+                        <h5 class="pt-2">We hate to see you go.</h5>
+                        <div class="row pt-2">
+                            <div class="col-sm-6">
+                                <form class="form-group">
+                                    <label for="email">Email</label>
+                                    <input type="email" class="form-control" id="email" placeholder="johndoe@email.com">
+                                </form>
+                                <div class="text-right">
+                                    <button type="submit" class="btn btn-primary text-right">Unsubscribe</button>
+                                </div>
+                            </div>
+                        </div>
                     </div>
                 </div>
-            </form>
-            <div class="right">
-                <p>Want to unsubscribe?</p>
             </div>
-            <form class="form" action="">
-                <div id="container" style="width:50%; vertical-align: middle;">
-                    <div id="left" style="float:left; width: 15%; padding-top:
-                        1%;">
-                        <p>
-                            Email
-                        </p>
-                    </div>
-                    <div id="middle" style="float:left; width: 40%; padding-top:
-                        2.7%; padding-right: 7%;">
-                        <input type="email" id="email" class="emailInput"
-                            pattern=".+@globex\.com" size="30"
-                            required>
-                    </div>
-                    <div id="right" style="float:left; width: 20%; padding-top:
-                        3%; padding-left: 12%;">
-                        <button onclick="window.location.href=''"
-                            class="subscribeButton">Unsubscribe</button>
-                    </div>
-                </div>
-            </form>
-        </main>
-    </body>
+        </div>
+        </div>
+
+        <footer class="container-fluid text-center">
+            <p>Footer Text</p>
+        </footer>
+    </main>
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.0/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js"></script>
+</body>
+
 </html>
