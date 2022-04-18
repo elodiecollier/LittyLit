@@ -1,113 +1,42 @@
+/* Remove the navbar's default margin-bottom and rounded borders */
+.navbar {
+  margin-bottom: 0;
+  border-radius: 0;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+
+.nav-item h5 {
+  font-size: 22px;
+  font-weight: 400;
+  padding-right: 2rem;
+}
+
+.nav-item h5:hover, .nav-item a:hover {
+  color: grey !important;
+}
+
 body {
-    background: #C8D8E4;
-    margin: 0;
+    background-color: #C8D8E4;
 }
 
-img {
-    margin-top: 5%;
-    margin-left: 5%;
+a.navbar-brand {
+  font-family: Girassol;
 }
 
-ul {
-    list-style-type: none;
-    padding: 0;
-    overflow: hidden;
-    background-color: #ffffff;
-    margin : 0 !important;
-    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
-  }
-  
-  li {
-    float: left;
-    
-  }
-  
-  li a {
-    display: block;
-    color: #3F3D56;
-    text-align: center;
-    padding: 20px;
-    text-decoration: none;
-    font-family: Girassol;
-    font-weight: bold;
-    font-size: 55px;
-    margin: 0;
-  }
-  
-  li a:hover {
+.footer {
+  background-color: lightgrey !important;
+  max-height: 3rem !important;
+  padding: 15px;
+}
 
-  }
+.footer p {
+  font-size: 14px !important;
+  font-family: Nunito !important;
+  color: darkgrey !important;
+}
 
-  .left {
-    width: 50%; 
-    height: 88%; 
-    float: left; 
-    background: #2B6777
-  }
-
-  .right {
-    background: #C8D8E4;
-    margin-left: 50%; 
-  }
-
-  .loginButton {
-    padding: 15px 32px;
-    font-family: Nunito;
-    background-color: #3F3D56;
-    color: #ffffff;
-    font-size: 20px;
-    padding: 10px 20px;
-    border-radius: 10px;
-    border: 2px solid #3F3D56;
-    box-shadow: 5px 3px 10px #888888;
-    float: right;
-    margin-right: 2%;
-    margin-top: 2%;
-    
-  }
-
-  .loginButton:hover {
-      opacity: 0.85;
-
-  }
-
-  h1 {
-      font-family: Girassol;
-      text-align: center;
-      margin-right: 10%;
-      font-size: 145px;
-      color: #ffffff;
-      text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
-      margin-bottom: 0;
-      margin-top: 20%;
-  }
-
-  p {
-      color: #ffffff;
-      font-family: Nunito;
-      font-size: 30px;
-      text-align: center;
-      padding-left: 12%;
-      padding-right: 12%;
-      margin-right: 10%;
-      margin-top: 0;
-  }
-
-  .registerButton {
-    padding: 15px 32px;
-    font-family: Nunito;
-    background-color: #ffffff;
-    color: #3F3D56;
-    font-size: 20px;
-    padding: 10px 20px;
-    border-radius: 10px;
-    border: 2px solid #ffffff;
-    margin-left: 26%;
-    margin-top: 3%;
-    font-weight:bold;
-  }
-
-  .registerButton:hover {
-      opacity: 0.85;
-  }
+body {
+  background: #C8D8E4 !important;
+  margin: 0;
+}
 
