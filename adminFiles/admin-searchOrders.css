@@ -3,124 +3,76 @@ body {
   margin: 0;
 }
 
-
-ul {
-  list-style-type: none;
-  padding: 0;
-  overflow: hidden;
-  background-color: #ffffff;
-  margin : 0 !important;
+/* NAVBAR */
+.navbar {
+  margin-bottom: 0;
+  border-radius: 0;
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
 }
 
-li {
-  float: left;
-  
+.nav-item h5 {
+  font-size: 22px;
+  font-weight: 400;
+  padding-right: 2rem;
 }
 
-li a {
-  display: block;
-  color: #3F3D56;
-  text-align: center;
-  padding: 20px;
-  text-decoration: none;
-  font-family: Girassol;
-  font-size: 55px;
-  margin: 0;
+.nav-item h5:hover, .nav-item a:hover {
+  color: grey !important;
 }
 
-.homeNav {
-  display: block;
-  color: #3F3D56;
-  text-align: center;
-  padding: 20px;
-  text-decoration: none;
+.nowrap {
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.avatarMargin {
+  margin-left: 2.2rem;
+}
+
+a.navbar-brand {
   font-family: Girassol;
+}
+
+a.nav-item {
+  font-family: Nunito;
+}
+
+.row-bottom-margin {
+  margin-bottom: -10px;
+}
+
+.navbar .navbar-nav {
+  float: none;
+  vertical-align: middle;
+}
+
+.navbar .navbar-collapse {
+  text-align: center;
+}
+
+h3 {
+  font-family: Nunito !important;
+  font-weight: bold !important;
+  text-align: left;
+  color: #3F3D56 !important;
+  margin-bottom: 0;
+}
+
+h5 {
+  font-family: Nunito;
+  text-align: center;
+  color: #3F3D56 !important;
+  margin-bottom: 0;
   font-weight: bold;
-  font-size: 55px;
-  margin: 0;
 }
 
-.searchOrdersNav {
-  display: block;
-  color: #3F3D56;
-  text-align: center;
-  padding: 20px;
-  text-decoration: none;
-  font-family: Nunito;
-  font-size: 25px;
-  margin-left: 50px;
-  padding-top: 36px;
+strong {
+  font-family: Nunito !important;
+  font-weight: bold !important;
+  color: #3F3D56 !important;
 }
 
- .searchOrdersNav:hover {
-    opacity: 0.85;
-}
-
-.searchUsersNav {
-  display: block;
-  color: #3F3D56;
-  text-align: center;
-  padding: 20px;
-  text-decoration: none;
-  font-family: Nunito;
-  font-size: 25px;
-  margin-left: 50px;
-  padding-top: 36px;
-}
-
-.searchUsersNav:hover {
-  opacity: 0.85;
-}
-
-.searchBooksNav {
-  display: block;
-  color: #3F3D56;
-  text-align: center;
-  padding: 20px;
-  text-decoration: none;
-  font-family: Nunito;
-  font-size: 25px;
-  margin-left: 50px;
-  padding-top: 36px;
-}
-
-.searchBooksNav:hover {
-  opacity: 0.85;
-}
-
-.myAccNav {
-  display: block;
-  color: #3F3D56;
-  text-align: center;
-  padding: 20px;
-  text-decoration: none;
-  font-family: Nunito;
-  font-size: 25px;
-  margin-left: 50px;
-  padding-top: 36px;
-}
-
-.myAccNav:hover {
-  opacity: 0.85;
-}
-
-.reportsNav {
-  display: block;
-  color: #3F3D56;
-  text-align: center;
-  padding: 20px;
-  text-decoration: none;
-  font-family: Nunito;
-  font-size: 25px;
-  margin-left: 50px;
-  padding-top: 36px;
-}
-
-.reportsNav:hover {
-  opacity: 0.85;
-}
-  /* End of Hover */
 
   /* Search Users Div */
 

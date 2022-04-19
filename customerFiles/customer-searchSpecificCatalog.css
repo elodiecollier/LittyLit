@@ -95,10 +95,6 @@ strong {
 
   /* Search Bar Stuff */
 
-  .please {
-      display: flex;
-  }
-
   form {
       margin-top: 70px;
   }
@@ -106,43 +102,22 @@ strong {
   .Search {
     text-align: center;
     margin-left: 70px;
-    display: flex;
-
 }
 
 .Search h1 {
   font-family: 'Nunito';
-  float: left;
   font-style: normal;
   font-weight:bolder;
   font-size: 45px;
   line-height: 49px;
+  
   color: #3F3D56;
 }
 
-/* Edit Button */
-
-.AddText {
-    margin-left: 970px;
-    margin-top: 40px;
-    width: 110px;
-    height: 40px;
-    border: 2px solid #2B6777;
-    background: #2B6777;
-    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
-    border-radius: 5px;
+.search pre {
+    font-size: 10px;
     font-family: 'Nunito';
-    font-style: normal;
-    font-weight: 700;
-    font-size: 18px;
-    line-height: 19px;
-   
-
-    color: #FFFFFF;
-
 }
-
-/* End of Edit Button */
 
 .emailLabel {
   font-size: 24px;
@@ -176,7 +151,7 @@ strong {
     margin-left: 180px;
     margin-top: 20px;
     width: 250px;
-    height: 400px;
+    height: 350px;
     background: #C8D8E4;
     box-shadow: 3px 4px 4px 2px rgba(0, 0, 0, 0.4);
     border-radius: 5px;
@@ -205,7 +180,8 @@ strong {
     color: #3F3D56;
   }
 
-  .center pre {
+  .center h3 {
+    float: right;
     margin-right: 10px;
     font-family: 'Nunito';
     font-style: normal;
@@ -242,24 +218,70 @@ strong {
 
 /* End of Div Pics */
 
-.EditText {
-    margin-top: 5px;
-    margin-left: 80px;
-    width: 90px;
-    height: 30px;
-    margin-bottom: 10px;
-    background-color: #2B6777;
-    border: 2px solid #2B6777;
-    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
-    border-radius: 5px;
+
+/* Questions in Middle */
+.QMiddle {
+    
+    margin-bottom: 20px;
+}
+
+
+p {
+    display: inline;
+    font-family: Nunito;
+    color: #3F3D56;
+    font-size: 100%;
+}
+
+.TitleInfo {
+    top: 10px;
     font-family: 'Nunito';
     font-style: normal;
     font-weight: 700;
-    font-size: 18px;
-    line-height: 19px;
-
-    color: #FFFFFF;
+    font-size: 25px;
+    line-height: 33px;
+    display: flex;
+    align-items: center;
+    color: #3F3D56;
 }
+
+.AuthorInfo {
+    left: 25.28%;
+    right: 59.07%;
+    top: 40.27%;
+
+    font-family: 'Nunito';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 15px;
+    line-height: 18px;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    color: #3F3D56;
+}
+
+
+
+.Inventory {
+    width: 50px;
+    font-family: Nunito;
+    height: 20px;
+    margin-top: 5px;
+    margin-bottom: 30px;
+    border-radius: 7px;
+    border: 2px solid white;
+    /* box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25); */
+    margin-right: 50px;
+    font-size: 12px; 
+    color: #3F3D56;
+    margin-left: 10px;
+    box-shadow: inset 0px 4px 4px rgba(0, 0, 0, 0.25);
+
+}
+
+/* End of Questions in Middle */
+
 
 
 
@@ -268,4 +290,3 @@ strong {
     display: flex;
 }
 /* End of Overall Div */
-
