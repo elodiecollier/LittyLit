@@ -1,345 +1,153 @@
-body {
-    background: #ffffff;
-    margin: 0;
+/* Remove the navbar's default margin-bottom and rounded borders */
+.navbar {
+    margin-bottom: 0;
+    border-radius: 0;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
 }
 
-ul {
-    list-style-type: none;
-    padding: 0;
+.nav-item h5 {
+    font-size: 22px;
+    font-weight: 400;
+    padding-right: 2rem;
+}
+
+.nav-item h5:hover,
+.nav-item a:hover {
+    color: grey !important;
+}
+
+/* Set height of the grid so .sidenav can be 100% (adjust as needed) */
+.row.content {
+    height: 100%;
+}
+
+.bottom-margin {
+    margin-bottom: -0.5rem !important;
+}
+
+/* Set gray background color and 100% height */
+.sidenav {
+    padding-top: 20px;
+    background-color: #f1f1f1;
+    height: 100%;
+}
+
+.sidenav a {
+    font-size: 20px !important;
+    color: white !important;
+}
+
+.sidenav h5 {
+    font-size: 18px !important;
+    color: white !important;
+}
+
+.sidenav p {
+    font-size: 14px !important;
+    color: lightgrey !important;
+}
+
+.nowrap {
+    white-space: nowrap;
     overflow: hidden;
-    background-color: #ffffff;
-    margin : 0 !important;
-    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
-  }
-  
-  li {
-    float: left;
-    
-  }
-  
-  li a {
-    display: block;
-    color: #3F3D56;
+    text-overflow: ellipsis;
+}
+
+.avatarMargin {
+    margin-left: 2.2rem;
+}
+
+.footer {
+    background-color: lightgrey !important;
+    padding: 1rem;
+}
+
+.footer p {
+    font-size: .9rem !important;
+    font-family: Nunito !important;
+    color: darkgrey !important;
+}
+
+/* On small screens, set height to 'auto' for sidenav and grid */
+@media screen and (max-width: 767px) {
+    .sidenav {
+        height: auto;
+        padding: 15px;
+    }
+
+    .row.content {
+        height: auto;
+    }
+}
+
+h1, h3 {
+    font-family: Nunito !important;
+    font-weight: bold !important;
+    text-align: left;
+    color: #3F3D56 !important;
+    margin-bottom: 0;
+}
+
+h5, label {
+    font-family: Nunito;
     text-align: center;
-    padding: 20px;
-    text-decoration: none;
+    color: #3F3D56 !important;
+    margin-bottom: 0;
+}
+
+strong {
+    font-family: Nunito !important;
+    font-weight: bold !important;
+    color: #3F3D56 !important;
+}
+
+p.sidebar {
+    text-align: center;
+    color: #ffffff;
+}
+
+a.navbar-brand {
     font-family: Girassol;
-    font-weight: bold;
-    font-size: 55px;
-    margin: 0;
-  }
+}
 
-  .searchOrdersNav {
-    display: block;
-    color: #3F3D56;
+a.nav-item {
+    font-family: Nunito;
+}
+
+.row-bottom-margin {
+    margin-bottom: -10px;
+}
+
+.navbar .navbar-nav {
+    float: none;
+    vertical-align: middle;
+}
+
+.navbar .navbar-collapse {
     text-align: center;
-    padding: 20px;
-    text-decoration: none;
-    font-family: Nunito;
-    font-size: 25px;
-    margin-left: 50px;
-    padding-top: 36px;
-  }
+}
 
-  .searchUsersNav {
-    display: block;
-    color: #3F3D56;
-    text-align: center;
-    padding: 20px;
-    text-decoration: none;
-    font-family: Nunito;
-    font-size: 25px;
-    margin-left: 50px;
-    padding-top: 36px;
-  }
-
-  .searchBooksNav {
-    display: block;
-    color: #3F3D56;
-    text-align: center;
-    padding: 20px;
-    text-decoration: none;
-    font-family: Nunito;
-    font-size: 25px;
-    margin-left: 50px;
-    padding-top: 36px;
-  }
-
-  .myAccNav {
-    display: block;
-    color: #3F3D56;
-    text-align: center;
-    padding: 20px;
-    text-decoration: none;
-    font-family: Nunito;
-    font-size: 25px;
-    margin-left: 50px;
-    padding-top: 36px;
-  }
-
-  .reportsNav {
-    display: block;
-    color: #3F3D56;
-    text-align: center;
-    padding: 20px;
-    text-decoration: none;
-    font-family: Nunito;
-    font-size: 25px;
-    margin-left: 50px;
-    padding-top: 36px;
-  }
-
-  h1 {
-      font-family: Nunito;
-      font-size: 45px;
-      color: #3F3D56;
-      margin-left: 160px;
-
-  }
-  
-  label {
-      font-family: Nunito;
-  }
-
-  .radioLabel {
-      font-family: Nunito;
-      color: #3F3D56;
-      margin-right: 60px;
-  }
-
-  p {
-      display: inline;
-      font-family: Nunito;
-      color: #3F3D56;
-      margin-right: 40px;
-      font-size: 100%;
-  }
-  
-  form {
-      text-align: center;
-      color: #3F3D56;
-      margin-left: 180px;
-  }
-
-  .nameInput {
-    width: 400px;
-    padding: 10px 15px;
-    margin-bottom: 20px;
-    border-radius: 10px;
-    border: 2px solid white;
-    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
-    margin-right: 150px;
-    margin-left: -60px;
-    float: inline;
-    font-size: 15px;
-  }
-
-  .inputEmail {
-    width: 53%;
-    padding: 10px 15px;
-    margin-bottom: 20px;
-    border-radius: 10px;
-    border: 2px solid white;
-    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
-    margin-right: 50px;
-    margin-left: 10px;
-    font-size: 15px;
-    width: 895px;
-    margin-right: 225px;
-  }
-
-  .firstNameLabel {
-    margin-right: 200px;
-    margin-left: -480px;
-  }
-
-  .lastNameLabel {
-    margin-left: 210px;
-  }
-
-  .emailLabel {
-    display: inline;
-    margin-right: 1045px;
-  }
-
-  .bdayInput {
-    width: 400px;
-    padding: 10px 15px;
-    margin-bottom: 20px;
-    border-radius: 10px;
-    border: 2px solid white;
-    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
-    margin-right: 150px;
-    margin-left: -60px;
-    float: inline;
-    font-size: 15px;
-  }
-
-  .passInput {
-    width: 400px;
-    padding: 10px 15px;
-    margin-bottom: 20px;
-    border-radius: 10px;
-    border: 2px solid white;
-    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
-    margin-right: 150px;
-    margin-left: -60px;
-    float: inline;
-    font-size: 15px;
-  }
-
-  .birthdayLabel {
-    margin-right: 200px;
-    margin-left: -490px;
-  }
-
-  .passwordLabel {
-    margin-left: 230px;
-  }
-
-  .addressLabel {
-    margin-right: 990px;
-    padding-top: 500px;
-    padding-left: 15px;
-  }
-
-  .addressInput {
-    width: 53%;
-    padding: 10px 15px;
-    margin-bottom: 20px;
-    border-radius: 10px;
-    border: 2px solid white;
-    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
-    margin-right: 50px;
-    margin-left: 10px;
-    font-size: 15px;
-    width: 895px;
-    margin-right: 225px;
-  }
-
-  .cityLabel {
-      margin-right: 300px;
-      margin-left: -320px;
-  }
-
-  .stateLabel {
-    margin-right: 280px;
-  }
-
-  .cityLabel2 {
-    padding-right: 160px;
-    padding-left: 0px;
-  }
-
-  .stateLabel2 {
-    padding-right: 130px;
-    padding-left: 70px;
-  }
-
-  .dateOrderedLabel {
-    margin-right: 340px;
-  }
-
-  .cityInput {
-    width: 250px;
-    padding: 10px 15px;
-    margin-bottom: 30px;
-    border-radius: 10px;
-    border: 2px solid white;
-    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
-    float: inline;
-    font-size: 15px;
-    margin-right: 78px;
-  }
-
-  .stateInput {
-    width: 250px;
-    padding: 10px 15px;
-    border-radius: 10px;
-    border: 2px solid white;
-    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
-    float: inline;
-    font-size: 15px;
-    margin-right: 78px;
-  }
-
-  .zipInput {
-    width: 230px;
-    padding: 10px 15px;
-    border-radius: 10px;
-    border: 2px solid white;
-    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
-    float: inline;
-    font-size: 15px;
-    margin-right: 215px;
-  }
-
-  h3 {
-    font-family: Nunito;
-    text-align: left;
-    padding-top: 12px;
-    padding-left: 10px;
-    font-size: 15px;
-    font-weight: 300;
-  }
-
-  h4 {
-    font-family: Nunito;
-    text-align: left;
-    padding-left: 20px;
-    margin-top: -10px;
-    font-weight: 100;
-    font-size: 13px;
-  }
-
-  .passReq {
-    background-color: #DEE8EF;
-    width: 220px;
-    height: 120px;
-    border-radius: 5px;
-    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
-    margin-left: 730px;
-    margin-top: -25px;
-    margin-bottom: 50px;
-  }
-
-  .submit {
-    padding: 15px 32px;
+.submit {
     font-family: Nunito;
     background-color: #2B6777;
     color: #ffffff;
     font-size: 20px;
-    padding: 10px 20px;
+    padding: 7px 30px;
     border-radius: 10px;
     border: 2px solid #2B6777;
-    font-weight:bold;
-    margin-top: 75px;
+    font-weight: bold;
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
-    margin-left: 150px;
-    margin-right: -900px;
-  }
+}
 
-  .submit:hover {
+.submit:hover {
     opacity: 0.8;
-  }
+}
 
-  hr {
-      width: 1000px;
-      height: 2px;
-      color: #2B6777;
-      background-color: #2B6777;
-      margin-bottom: 35px;
-      margin-right: 220px;
-  }
+.deleteAcc {
+    color: #2F2E41;
+    font-size: 20px;
+}
 
-  .deleteAcc {
-      font-family: Nunito;
-      text-align: left;
-      color: red;
-      padding-right: 480px;
-  }
-
-  .deleteDiv {
-  }
-
-
+input {
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
