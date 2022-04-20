@@ -1,278 +1,340 @@
 body {
-    background: white;
-    margin: 0;
+  background: white;
+  margin: 0;
 }
 /* NAVBAR */
 .navbar {
-  margin-bottom: 0;
-  border-radius: 0;
-  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+margin-bottom: 0;
+border-radius: 0;
+box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
 }
 
 .nav-item h5 {
-  font-size: 22px;
-  font-weight: 400;
-  padding-right: 2rem;
+font-size: 22px;
+font-weight: 400;
+padding-right: 2rem;
 }
 
 .nav-item h5:hover, .nav-item a:hover {
-  color: grey !important;
+color: grey !important;
 }
 
 .nowrap {
-  white-space: nowrap;
-  overflow: hidden;
-  text-overflow: ellipsis;
+white-space: nowrap;
+overflow: hidden;
+text-overflow: ellipsis;
 }
 
 .avatarMargin {
-  margin-left: 2.2rem;
+margin-left: 2.2rem;
 }
 
 a.navbar-brand {
-  font-family: Girassol;
+font-family: Girassol;
 }
 
 a.nav-item {
-  font-family: Nunito;
+font-family: Nunito;
 }
 
 .row-bottom-margin {
-  margin-bottom: -10px;
+margin-bottom: -10px;
 }
 
 .navbar .navbar-nav {
-  float: none;
-  vertical-align: middle;
+float: none;
+vertical-align: middle;
 }
 
 .navbar .navbar-collapse {
-  text-align: center;
+text-align: center;
 }
 
 h3 {
-  font-family: Nunito !important;
-  font-weight: bold !important;
-  text-align: left;
-  color: #3F3D56 !important;
-  margin-bottom: 0;
+font-family: Nunito !important;
+font-weight: bold !important;
+text-align: left;
+color: #3F3D56 !important;
+margin-bottom: 0;
 }
 
 h5 {
-  font-family: Nunito;
-  text-align: center;
-  color: #3F3D56 !important;
-  margin-bottom: 0;
-  font-weight: bold;
+font-family: Nunito;
+text-align: center;
+color: #3F3D56 !important;
+margin-bottom: 0;
+font-weight: bold;
 }
 
 strong {
-  font-family: Nunito !important;
-  font-weight: bold !important;
-  color: #3F3D56 !important;
+font-family: Nunito !important;
+font-weight: bold !important;
+color: #3F3D56 !important;
 }
 
-  /* Go Back link */
-  .GoBack {
+/* Go Back link */
+.GoBack {
 
-    margin-left: 50px;
-    margin-top: 60px;
-    margin-bottom: 30px;
-    font-family: 'Nunito';
-    font-style: normal;
-    font-weight: 700;
-    font-size: 19px;
-    line-height: 16px;
-    display: flex;
-    align-items: center;
-    text-decoration-line: underline;
-    color: #3F3D56;
-  }
-  /* End of Go Back link */
+  margin-left: 50px;
+  margin-top: 60px;
+  margin-bottom: 30px;
+  font-family: 'Nunito';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 19px;
+  line-height: 16px;
+  display: flex;
+  align-items: center;
+  text-decoration-line: underline;
+  color: #3F3D56;
+}
+/* End of Go Back link */
 
-  /* Div Background Details */
-  .center {
-    margin: auto;
-    margin-top: 20px;
-    width: 1300px;
-    height: 500px;
-    display: flex;
-    background: #C8D8E4;
-    box-shadow: 3px 4px 4px 2px rgba(0, 0, 0, 0.4);
-    border-radius: 5px;
-  }
+/* Div Background Details */
+.container {
+  background: #C8D8E4;
+  box-shadow: 3px 4px 4px 2px rgba(0, 0, 0, 0.4);
+  border-radius: 5px;
+}
 
 /* End of Div Details */
 
 
 /* Div Pics */
 .picLeft {
-    text-align: center;
-   
+  text-align: center;
  
+
 }
 
 .pic {
-    margin: auto;
-    display: block;
-    padding-top: 25%;
-    padding-bottom: 5%;
+  margin: auto;
+  display: block;
+  padding-top: 30px;
+  padding-bottom: 5%;
 }
 
 .Cover {
-    font-family: 'Nunito';
-    font-style: normal;
-    font-weight: 700;
-    font-size: 17px;
-    line-height: 16px;
-    text-decoration-line: underline;
-
-    color: #3F3D56;
+  font-family: 'Nunito';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 17px;
+  line-height: 16px;
+  text-decoration-line: underline;
+  margin-left: 60px;
+  color: #3F3D56;
 }
 
 /* End of Div Pics */
 
 
 /* Questions in Middle */
-.QMiddle {
-    margin-top: 90px;
-    margin-bottom: 20px;
+#QMiddle {
+  margin-top: 40px;
+  margin-bottom: 20px;
 }
 form {
-   
-    color: #3F3D56;
+ 
+  color: #3F3D56;
 }
 
 p {
-    display: inline;
-    font-family: Nunito;
-    color: #3F3D56;
-    
-    font-size: 100%;
+  display: inline;
+  font-family: Nunito;
+  color: #3F3D56;
+  
+  font-size: 100%;
 }
 
 .Text {
 
-    width: 80%;
-    height: 5%;
-    background-color: white;
-    padding: 2px 15px;
-    margin-top: 5px;
-    margin-bottom: 30px;
-    border-radius: 7px;
-    border: 2px solid white;
-    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
-    margin-right: 50px;
-    /* margin-left: 10px; */
-    font-size: 12px;
-    
-  }
-::placeholder {
-    color: #3F3D56;
-    opacity: 1;
-    font-weight: bolder;
+  width: 80%;
+  height: 5%;
+  background-color: white;
+  padding: 2px 15px;
+  margin-top: 5px;
+  margin-bottom: 30px;
+  border-radius: 7px;
+  border: 2px solid white;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  margin-right: 50px;
+  /* margin-left: 10px; */
+  font-size: 12px;
+  
 }
-  .TextDrop {
-    width: 70%;
-    font-family: Nunito;
-    height: 6%;
-    margin-top: 5px;
-    margin-bottom: 30px;
-    border-radius: 7px;
-    border: 2px solid white;
-    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
-    margin-right: 50px;
-    font-size: 12px; 
-    color: #3F3D56;
-  }
+::placeholder {
+  color: #3F3D56;
+  opacity: 1;
+  font-weight: bolder;
+}
+.TextDrop {
+  width: 70%;
+  font-family: Nunito;
+  height: 6%;
+  margin-top: 5px;
+  margin-bottom: 30px;
+  border-radius: 7px;
+  border: 2px solid white;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  margin-right: 50px;
+  font-size: 12px; 
+  color: #3F3D56;
+}
 
 /* End of Questions in Middle */
 
 
 
 /* Questions at End */
-.QEnd {
-    margin-top: 105px;
-    margin-bottom: 20px;
+#QEnd {
+  margin-top: 40px;
+  margin-bottom: 20px;
 }
 
 .Inventory {
-    width: 35%;
-    font-family: Nunito;
-    height: 6%;
-    margin-top: 5px;
-    margin-bottom: 30px;
-    border-radius: 7px;
-    border: 2px solid white;
-    /* box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25); */
-    margin-right: 50px;
-    font-size: 12px; 
-    color: #3F3D56;
-    margin-left: 10px;
-    box-shadow: inset 0px 4px 4px rgba(0, 0, 0, 0.25);
+  width: 35%;
+  font-family: Nunito;
+  height: 6%;
+  margin-top: 5px;
+  margin-bottom: 30px;
+  border-radius: 7px;
+  border: 2px solid white;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  margin-right: 50px;
+  font-size: 12px; 
+  color: #3F3D56;
+  margin-left: 10px;
 }
 
 
 .TextPrice {
-    width: 75%;
-    font-family: Nunito;
-    height: 6%;
-    margin-top: 5px;
-    margin-bottom: 30px;
-    border-radius: 7px;
-    border: 2px solid white;
-    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
-    margin-right: 50px;
-    font-size: 12px; 
-    color: #3F3D56;
+  width: 75%;
+  font-family: Nunito;
+  height: 6%;
+  margin-top: 5px;
+  margin-bottom: 30px;
+  border-radius: 7px;
+  border: 2px solid white;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  margin-right: 50px;
+  font-size: 12px; 
+  color: #3F3D56;
 
 }
 
 .textISBN {
-    width: 76%;
-    font-family: Nunito;
-    height: 6%;
-    margin-top: 5px;
-    margin-bottom: 30px;
-    border-radius: 7px;
-    border: 2px solid white;
-    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
-    margin-right: 50px;
-    font-size: 12px; 
-    color: #3F3D56; 
+  width: 76%;
+  font-family: Nunito;
+  height: 6%;
+  margin-top: 5px;
+  margin-bottom: 30px;
+  border-radius: 7px;
+  border: 2px solid white;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  margin-right: 50px;
+  font-size: 12px; 
+  color: #3F3D56; 
 }
 /* End of Questions at End */
 
 
 /* Buttons Div Class */
 .Buttons {
-    margin-top: 420px;
-    margin-bottom: 30px;
-    display: flex;
+  margin-top: 420px;
+  margin-bottom: 30px;
+  
 }
 
 .Remove {
-    font-family: 'Nunito';
-    font-style: normal;
-    font-weight: 700;
-    font-size: 17px;
-    line-height: 16px;
-    margin-top: 20px;
-    text-decoration-line: underline;
-    color: #3F3D56;
+  font-family: 'Nunito';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 17px;
+  line-height: 16px;
+  margin-top: 20px;
+  text-decoration-line: underline;
+  color: #3F3D56;
+  margin-left: 20px;
+  margin-bottom: 20px;
 }
 
 .SaveChanges {
-    position: absolute;
-    margin-top: 10px;
-    font-family: Nunito;
-    color: #ffffff;
-    background: #2B6777;
-    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
-    border-radius: 5px;
-    padding: 10px 20px;
-    font-size: 17px;
-    border: 2px solid #2B6777;
-    margin-left: 14%;
-    
+  
+  margin-top: 40px;
+  font-family: Nunito;
+  color: #ffffff;
+  background: #2B6777;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  border-radius: 5px;
+  padding: 10px 20px;
+  font-size: 15px;
+  border: 2px solid #2B6777;
+  margin-bottom: 10px;
+  /* margin-left: 14%; */
+  
+}
+/* 
+padding: 15px 32px;
+  font-family: Nunito;
+  background-color: #3F3D56;
+  color: #ffffff;
+  font-size: 20px;
+  padding: 10px 20px;
+  border-radius: 10px;
+  border: 2px solid #3F3D56;
+  box-shadow: 5px 3px 10px #888888;
+  float: right;
+  margin-right: 2%;
+  margin-top: 2%; */
+
+
+/* End of Buttons Div Class */
+
+
+@media only screen and (max-width: 991px) {
+  .Cover {
+    margin-left: 300px;
+  }
+
+  .Remove {
+    margin-left: 280px;
+    padding-bottom: 30px;
+  }
+
+  .SaveChanges {
+    margin-top: 40px;
+    margin-left: 265px;
+
+  }
+
+  #QMiddle {
+    padding-top: 40px;
+    box-shadow: inset 0px 4px 4px rgba(0, 0, 0, 0.1);
+
+  }
+
+  #QEnd {
+    padding-top: 40px;
+    box-shadow: inset 0px 4px 4px rgba(0, 0, 0, 0.1);
+  }
+
+  #Button {
+    box-shadow: inset 0px 4px 4px rgba(0, 0, 0, 0.1);
+
+  }
+
+  
+}
+
+@media only screen and (max-width: 767px) {
+  .Cover {
+    margin-left: 200px;
+  }
+  .Remove {
+    margin-left: 200px;
+  }
+
+  .SaveChanges {
+    margin-left: 185px;
+  }
 }
