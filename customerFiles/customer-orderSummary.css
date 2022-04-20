@@ -73,7 +73,7 @@ strong {
 }  
 
   /* Div Background Details */
-  .center {
+  .container {
     margin: auto;
     margin-top: 100px;
     width: 1000px;
@@ -85,7 +85,7 @@ strong {
     border-radius: 5px;
   }
 
-  .center h1 {
+  .container h1 {
     font-family: 'Nunito';
     text-align: center; 
     margin-left: 10px;
@@ -99,12 +99,12 @@ strong {
     
   }
 
-  .center h1 span {
+  .container h1 span {
         font-family: 'Girassol';
         font-style: normal;
   }
 
-  .center h2 {
+  .container h2 {
     font-family: 'Nunito';
     font-style: normal;
     font-weight: 700;
@@ -147,3 +147,10 @@ strong {
 }
 
 /* End of Buttons Div Class */
+
+
+@media only screen and (max-width: 767px) {
+  .container h1 {
+    line-height: 1;
+  }
+}
