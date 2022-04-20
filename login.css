@@ -1,138 +1,58 @@
-body {
-    background: #C8D8E4;
-    margin: 0;
+/* Remove the navbar's default margin-bottom and rounded borders */
+.navbar {
+  margin-bottom: 0;
+  border-radius: 0;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
 }
 
-ul {
-    list-style-type: none;
-    padding: 0;
-    overflow: hidden;
-    background-color: #ffffff;
-    margin : 0 !important;
-    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
-  }
-  
-  li {
-    float: left;
-    
-  }
-  
-  li a {
-    display: block;
-    color: #3F3D56;
-    text-align: center;
-    padding: 20px;
-    text-decoration: none;
-    font-family: Girassol;
-    font-weight: bold;
-    font-size: 55px;
-    margin: 0;
-  }
-  
-  li a:hover {
+.nav-item h5 {
+  font-size: 22px;
+  font-weight: 400;
+  padding-right: 2rem;
+}
 
-  }
+.nav-item h5:hover, .nav-item a:hover {
+  color: grey !important;
+}
 
-.loginPage {
-    background-color: #ffffff;
-    background-image: url("images/undraw_road_to_knowledge_m8s0.svg");
-    background-repeat: no-repeat;
-    background-position: 100% -25%;
-    background-size: cover;
-  }
+body {
+    background-color: #C8D8E4;
+}
 
-  .loginImg {
-    width: 90%;
-  }
+a.navbar-brand {
+  font-family: Girassol;
+}
 
-  .customerLogin {
-    position: absolute;
-    width: 500px;
-    height: 470px;
-    left: 75px;
-    top: 128px;
-    background: rgba(43, 103, 119, 0.7);
-    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
-    border-radius: 7px;
-    margin-left: 5%;
-    margin-top: 6%;
-  }
+.footer {
+  background-color: lightgrey !important;
+  max-height: 3rem !important;
+  padding: 15px;
+}
 
-  h1 {
-    font-family: Girassol;
-    text-align: center;
-    color: #ffffff;
-    font-size: 500%;
-    margin-bottom: -5%;
-    margin-top: 5%;
-  }
+.footer p {
+  font-size: 14px !important;
+  font-family: Nunito !important;
+  color: darkgrey !important;
+}
 
-  h2 {
-    font-family: Nunito;
-    text-align: center;
-    color: #ffffff;
-    padding-top: -20px;
-    font-size: 160%;
-  }
+body {
+  /* background: #C8D8E4 !important; */
+  margin: 0;
+  height: 100% !important;
+  width: 100% !important;
+}
 
-  .customerForm {
-      font-family: Nunito;
-      text-align: center;
-      color: #ffffff
-  }
+button:hover {
+  opacity: 80% !important;
+}
 
-  input[type=text] {
-    width: 50%;
-    padding: 12px 20px;
-    margin-bottom: 20px;
-    border-radius: 10px;
-    border: 2px solid white;
-  }
 
-  input[type=password] {
-    width: 50%;
-    padding: 12px 20px;
-    border-radius: 10px;
-    border: 2px solid white;
-  }
+.linkHere {
+  color: rgba(63, 61, 86, 1) !important;
+  text-decoration: underline !important;
+}
 
-  input[type=submit] {
-    padding: 15px 32px;
-    font-family: Nunito;
-    background-color: #3F3D56;
-    color: #ffffff;
-    font-size: 20px;
-    padding: 10px 20px;
-    border-radius: 10px;
-    border: 2px solid #3F3D56;
-    box-shadow: 2px 3px 10px #115263;
-    margin-top: 25px;
-  }
+.linkHere:hover {
+  color: rgba(43, 103, 119, 1) !important;
+}
 
-  input[type=submit]:hover {
-    opacity: 0.85;
-  }
-
-  label {
-      text-align: left;
-  }
-
-  .vendorLogin {
-    position: absolute;
-    width: 500px;
-    height: 470px;
-    left: 93px;
-    top: 128px;
-    background: rgba(43, 103, 119, 0.7);
-    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
-    border-radius: 7px;
-    margin-left: 50%;
-    margin-top: 6%;
-  }
-
-  p {
-      text-align: center;
-      font-family: Nunito;
-      font-size: 18px;
-      padding-top:2%
-  }
