@@ -33,54 +33,58 @@
         </nav>
           
           <a href="#" class = "GoBack"><b> << Go Back</b></a>
+          
+          <div class="container">
+              <div class="row"> 
+                  <div class=col-lg-3>
+                    <img class="pic" src= "../images/DefaultBook.png" alt="Place Holder Book" style="width:210px;height:350px;">
+                    <a href="#" class="Cover"><b>Change Cover</b></a>
 
-          <div class="center">
-              <div class="picLeft" style="width: 280px;height:510px;">
-                <img class="pic" src= "../images/DefaultBook.png" alt="Place Holder Book" style="width:210px;height:350px;">
-                <a href="#" class="Cover"><b>Change Cover</b></a>
-              </div>
-
-              <div class="QMiddle" style="width: 350px;">
-                <form action="">
-                    <p><b>Book Title</b></p><br>
-                    <!-- <h3 class="Text">The Great Gatsby </h3> -->
-                    <input class="Text" type="text" id="btitle" name="btitle"><br><br>
-
-                    <p><b>Author</b></p><br>
-                    <!-- <h3 class="Text">F. Scott Fitzgerald </h3> -->
-                    <input class="Text" type="text" id="btitle" name="btitle"><br><br>
-
-                    <p><b>Genre</b><p><br>
-                        <select class="TextDrop">  
-                        <option style="font-weight: bolder;" value = "Fiction" selected> Select a Genre  
-                        </option>  
-                        </select>
-                </form>
-              </div>
-
-              <div class="QEnd" style="width: 300px;">
-                <form action="">
-                    <p><b>Inventory:</b></p>
-                        <select class="Inventory">  
-                            <option style="font-weight: bolder;" value = "Number" selected> #  
+                  </div>
+                  <div class=col-lg-3 id="QMiddle">
+                    <form action="">
+                        <p><b>Book Title</b></p><br>
+                    
+                        <input class="Text" type="text" id="btitle" name="btitle"><br><br>
+    
+                        <p><b>Author</b></p><br>
+                        <input class="Text" type="text" id="btitle" name="btitle"><br><br>
+    
+                        <p><b>Genre</b><p><br>
+                            <select class="TextDrop">  
+                            <option style="font-weight: bolder;" value = "Fiction" selected> Select a Genre  
                             </option>  
-                        </select><br><br>
+                            </select>
+                    </form>
 
-                    <p><b>Price</b></p><br>
-                    <p>$</p><input class="TextPrice" type="text" id="btitle" name="btitle"><br><br>
+                  </div>
+                  <div class=col-lg-3 id="QEnd">
+                    <form action="">
+                        <p><b>Inventory:</b></p>
+                            <select class="Inventory">  
+                                <option style="font-weight: bolder;" value = "Number" selected> #  
+                                </option>  
+                            </select><br><br>
+    
+                        <p><b>Price</b></p><br>
+                        <p>$</p><input class="TextPrice" type="text" id="btitle" name="btitle"><br><br>
+    
+                        <p><b>ISBN</b></p><br>
+                        <input class="TextISBN" type="text" id="btitle" name="btitle"><br><br>
+                    </form>
 
-                    <p><b>ISBN</b></p><br>
-                    <input class="TextISBN" type="text" id="btitle" name="btitle"><br><br>
-                </form>
-            </div>
+                  </div>
+                  <div class=col-lg-3 id="Button">
+                    <button onclick="window.location.href='#'" class="SaveChanges">Save Changes</button><br>
+                    <a href="#" class="Remove"><b>Remove Book</b></a>
 
-            <div class="Buttons" style="width: 300px;">
-                <a href="#" class="Remove"><b>Remove Book</b></a>
-                <button onclick="window.location.href='#'" class="SaveChanges">Save Changes</button>
+                  </div>
 
-            </div>
-
+                  
+              </div>
           </div>
+
+       
     </main>
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.0/umd/popper.min.js"></script>
