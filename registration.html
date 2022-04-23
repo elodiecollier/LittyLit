@@ -1,52 +1,135 @@
 <!DOCTYPE>
+
 <head>
     <link href="registration.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css">
     <title>LittyLit</title>
     <link href='https://fonts.googleapis.com/css?family=Nunito' rel='stylesheet'>
     <link href='https://fonts.googleapis.com/css?family=Girassol' rel='stylesheet'>
 </head>
-<body>
+
+<body class="d-flex flex-column min-vh-100">
+
     <main>
-        <ul>
-            <li><a class="active" href="home.html">LL</a></li>
-          </ul>
-          <h1>LittyLit</h1>
-          <h2>Let's get you registered!</h2>
-          <form action="">
-            <p>Are you registering as a...</p>
-<!-- radio buttons -->
-            <input type="radio" id="customer" name="registeringAs">
-            <label class="radioLabel" for="customer">Customer</label>
+        <nav class="navbar navbar-expand-lg navbar-light bg-light">
+            <a class="navbar-brand pl-4" href="#" style="font-size: 60px; color: #3F3D56;">LL</a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup"
+                aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+        </nav>
+        <!-- Page Content -->
+        <div class="container-fluid text-center">
+            <div class="row h-100 content justify-content-center">
+                <!-- Main Page Portion -->
+                <div class="col-sm-10">
+                    <div class="ml-4 mt-5">
+                        <h1>LittyLit</h1>
+                        <h3>Let's get your registered!</h3>
+                        <div class="pt-2 row justify-content-center">
+                            <div class="col-4">
+                                <div class="pt-2 form-group">
+                                    <label for="firstName">First Name</label>
+                                    <input type="text" class="form-control" id="firstName" name="firstName"
+                                        placeholder="Andrew">
+                                </div>
+                            </div>
+                            <div class="col-4">
+                                <div class="pl-2 pt-2 form-group">
+                                    <label for="lastName">Last Name</label>
+                                    <input type="text" class="form-control" id="lastName" name="lastName"
+                                        placeholder="Humble">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="pt-2 row justify-content-center">
+                            <div class="col-8 t-2 form-group">
+                                <label for="email">Email</label>
+                                <input type="email" class="form-control" id="email" placeholder="johndoe@email.com">
+                            </div>
+                        </div>
+                        <div class="pt-2 row justify-content-center">
+                            <div class="col-4">
+                                <div class="pt-2 form-group">
+                                    <label for="username">Username</label>
+                                    <input type="text" class="form-control" id="username" name="username"
+                                        placeholder="andrewhumble">
+                                </div>
+                            </div>
+                            <div class="col-4">
+                                <div class="pl-2 pt-2 form-group">
+                                    <label for="password">Password</label>
+                                    <input type="password" class="form-control" id="password" name="password"
+                                        placeholder="&#9679;&#9679;&#9679;&#9679;&#9679;&#9679;&#9679;&#9679;&#9679;&#9679;&#9679;&#9679;&#9679;&#9679;&#9679;&#9679;&#9679;&#9679;&#9679;&#9679;&#9679;&#9679;">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="pt-2 row justify-content-center">
+                            <div class="col-4">
+                                <div class="pt-2 form-group">
+                                    <label for="username">Birthday</label>
+                                    <input type="date" class="form-control" id="username" name="username">
+                                </div>
+                            </div>
+                            <div class="col-4">
+                                <div class="pl-2 pt-2 form-group">
 
-            <input type="radio" id="vendor" name="registeringAs">
-            <label class="radioLabel" for="vendor">Vendor</label><br><br>
-<!-- first name, last name -->
-            <p class="firstNameLabel">First Name</p>
-            <p class="lastNameLabel">Last Name</p> <br>
-
-            <input class="nameInput" type="text" id="fname" name="fname">
-            <input class="nameInput" type="text" id="lname" name="fname"> <br>
-<!-- email -->
-            <p class="emailLabel">Email</p> <br>
-            <input class="inputEmail" type="email" id="email" name="email"><br><br>
-
-            <p class="birthdayLabel">Birthday</p>
-            <p class="passwordLabel">Password</p> <br>
-
-            <input class="bdayInput" type="date" id="bday" name="bday">
-            <input class="passInput" type="password" id="pass" name="pass" > <br>
-
-            <div class="passReq">
-                <h3>Your password must include:</h3>
-                <h4>- at least 8 characters</h4>
-                <h4>- at least one letter</h4>
-                <h4>- at least one number</h4>
-                </h4>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row justify-content-center">
+                            <div class="col-8">
+                                <hr>
+                            </div>
+                        </div>
+                        <div class="pt-2 row justify-content-center">
+                            <div class="col-8 t-2 form-group">
+                                <label for="address">Street Address</label>
+                                <input type="address" class="form-control" id="address"
+                                    placeholder="327 S. Milledge Ave.">
+                            </div>
+                        </div>
+                        <div class="pt-2 mb-4 row justify-content-center">
+                            <div class="col-3">
+                                <div class="pt-2 form-group">
+                                    <label for="city">City</label>
+                                    <input type="text" class="form-control" id="city" name="city" placeholder="Athens">
+                                </div>
+                            </div>
+                            <div class="col-2">
+                                <div class="pt-2 form-group">
+                                    <label for="state">State</label>
+                                    <input type="state" class="form-control" id="state" name="state" placeholder="GA">
+                                </div>
+                            </div>
+                            <div class="col-3">
+                                <div class="pl-2 pt-2 form-group">
+                                    <label for="password">Zip Code</label>
+                                    <input type="text" class="form-control" id="zip" name="zip" placeholder="30605">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row justify-content-center">
+                        <div class="col-8 text-right">
+                            <button type="submit" class="btn btn-primary">Save Changes</button>
+                        </div>
+                    </div>
+                    <div class="row pt-4 justify-content-center">
+                        <div class="col-8 text-center">
+                            <a href="/login">Already have an account? Click here to login.</a>
+                        </div>
+                    </div>
+                </div>
             </div>
-            <input class="submit" type="submit" value="Continue">
-        </form>
-        <h5>Already have an account? Click <a href="login.html">here</a> to login.</h5>
+        </div>
+        <footer class="footer pl-4 mt-auto">
+            <p>CSCI 4050 Final Project by Andrew Humble, Elodie Collier, Nisha Rajendra, and Manmeet Gill.</p>
+        </footer>
     </main>
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.0/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js"></script>
 </body>
 
 </html>

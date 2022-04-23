@@ -1,202 +1,200 @@
-body {
-    background: #ffffff;
-    margin: 0;
+/* Remove the navbar's default margin-bottom and rounded borders */
+.navbar {
+  margin-bottom: 0;
+  border-radius: 0;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
 }
 
-ul {
-    list-style-type: none;
-    padding: 0;
-    overflow: hidden;
-    background-color: #ffffff;
-    margin : 0 !important;
-    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
-  }
-  
-  li {
-    float: left;
-    
-  }
-  
-  li a {
-    display: block;
-    color: #3F3D56;
-    text-align: center;
-    padding: 20px;
-    text-decoration: none;
-    font-family: Girassol;
-    font-weight: bold;
-    font-size: 55px;
-    margin: 0;
+.nav-item h5 {
+  font-size: 22px;
+  font-weight: 400;
+  padding-right: 2rem;
+}
+
+.nav-item h5:hover,
+.nav-item a:hover {
+  color: grey !important;
+}
+
+/* Set height of the grid so .sidenav can be 100% (adjust as needed) */
+.row.content {
+  height: 100%;
+}
+
+.bottom-margin {
+  margin-bottom: -0.5rem !important;
+}
+
+/* Set gray background color and 100% height */
+.sidenav {
+  padding-top: 20px;
+  background-color: #f1f1f1;
+  height: 100%;
+}
+
+.sidenav a {
+  font-size: 20px !important;
+  color: #ffffff !important;
+  font-weight: 300 !important;
+}
+
+.sidenav h5 {
+  font-size: 18px !important;
+  color: white !important;
+}
+
+.sidenav p {
+  font-size: 14px !important;
+  color: lightgrey !important;
+}
+
+.footer {
+  background-color: lightgrey !important;
+  max-height: 3rem !important;
+  padding: 15px;
+}
+
+
+.footer p {
+  font-size: 14px !important;
+  font-family: Nunito !important;
+  color: darkgrey !important;
+}
+
+.nowrap {
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.avatarMargin {
+  margin-left: 2.2rem;
+}
+
+/* On small screens, set height to 'auto' for sidenav and grid */
+@media screen and (max-width: 767px) {
+  .sidenav {
+    height: auto;
+    padding: 15px;
   }
 
-  h1 {
-      font-family: Girassol;
-      font-size: 55px;
-      color: #3F3D56;
-      text-align: center;
-      margin-top: 5px;
-      text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.20);
+  .row.content {
+    height: auto;
   }
+}
 
-  h2 {
-      font-family: Nunito;
-      color: #3F3D56;
-      margin-top: -30px;
-      text-align: center;
-      font-weight: 400;
-      text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.10);
-      margin-bottom: 40px;
-  }
+h1 {
+  font-family: Girassol !important;
+  font-weight: bold !important;
+  text-align: center;
+  font-size: 4rem !important;
+  color: #3F3D56 !important;
+  margin-bottom: 0;
+}
 
-  label {
-      font-family: Nunito;
-  }
-  .radioLabel {
-      font-family: Nunito;
-      color: #3F3D56;
-      margin-right: 60px;
-  }
+h3 {
+  font-family: Nunito !important;
+  font-weight: bold !important;
+  text-align: center;
+  color: #3F3D56 !important;
+  margin-bottom: 0;
+}
 
-  p {
-      display: inline;
-      font-family: Nunito;
-      color: #3F3D56;
-      margin-right: 40px;
-      font-size: 100%;
-  }
-  
-  form {
-      text-align: center;
-      color: #3F3D56;
-  }
+h5,
+label {
+  font-family: Nunito !important;
+  color: #3F3D56 !important;
+  margin-bottom: 0;
+  text-align: left !important;
+  font-weight: bold;
+}
 
-  .nameInput {
-    width: 20%;
-    padding: 10px 15px;
-    margin-bottom: 20px;
-    border-radius: 10px;
-    border: 2px solid white;
-    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
-    margin-right: 50px;
-    margin-left: 10px;
-    float: inline;
-    font-size: 15px;
-  }
+p, input, a {
+  font-family: Nunito !important;
+  text-align: left !important;
+  color: #3F3D56 !important;
+  margin-bottom: 0;
+}
 
-  .inputEmail {
-    width: 53%;
-    padding: 10px 15px;
-    margin-bottom: 20px;
-    border-radius: 10px;
-    border: 2px solid white;
-    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
-    margin-right: 50px;
-    margin-left: 10px;
-    font-size: 15px;
-  }
+input {
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
 
-  .firstNameLabel {
-    margin-right: 200px;
-    margin-left: -210px;
-  }
+.btn {
+  font-family: Nunito !important;
+  text-align: left;
+  color: #3F3D56 !important;
+  background-color: #C8D8E4 !important;
+  border-color: #C8D8E4 !important;
+  margin-bottom: 0;
+  vertical-align: end;
+}
 
-  .lastNameLabel {
-    margin-left: 70px;
-  }
+strong {
+  font-family: Nunito !important;
+  font-weight: bold !important;
+  color: #3F3D56 !important;
+}
 
-  .emailLabel {
-    display: inline;
-    margin-right: 630px;
-  }
+p.sidebar {
+  text-align: center;
+  color: #ffffff;
+}
 
-  .inputEmail {
-    width: 640px;
-  }
+a.navbar-brand {
+  font-family: Girassol !important;
+}
 
-  .bdayInput {
-    width: 20%;
-    padding: 10px 15px;
-    margin-bottom: 20px;
-    border-radius: 10px;
-    border: 2px solid white;
-    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
-    margin-right: 50px;
-    margin-left: 10px;
-    float: inline;
-    font-size: 15px;
-  }
+a.nav-item {
+  font-family: Nunito;
+}
 
-  .passInput {
-    width: 20%;
-    padding: 10px 15px;
-    border-radius: 10px;
-    border: 2px solid white;
-    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
-    margin-right: 50px;
-    margin-left: 10px;
-    float: inline;
-    font-size: 15px;
-  }
+.row-bottom-margin {
+  margin-bottom: -10px;
+}
 
-  .birthdayLabel {
-    margin-right: 200px;
-    margin-left: -210px;
-  }
+.navbar .navbar-nav {
+  float: none;
+  vertical-align: middle;
+}
 
-  .passwordLabel {
-    margin-left: 90px;
-  }
+.navbar .navbar-collapse {
+  text-align: center;
+}
 
-  h3 {
-    font-family: Nunito;
-    text-align: left;
-    padding-top: 12px;
-    padding-left: 10px;
-    font-size: 15px;
-    font-weight: 300;
-  }
+button {
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
 
-  h4 {
-    font-family: Nunito;
-    text-align: left;
-    padding-left: 20px;
-    margin-top: -10px;
-    font-weight: 100;
-    font-size: 13px;
-  }
+label {
+  width: 100rem;
+}
 
-  .passReq {
-    background-color: #DEE8EF;
-    width: 220px;
-    height: 120px;
-    border-radius: 5px;
-    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
-    margin-left: 730px;
-    margin-top: -25px;
-  }
+.alert {
+  display: none;
+}
 
-  .submit {
-    padding: 15px 32px;
-    font-family: Nunito;
-    background-color: #2B6777;
-    color: #ffffff;
-    font-size: 20px;
-    padding: 10px 20px;
-    border-radius: 10px;
-    border: 2px solid #2B6777;
-    font-weight:bold;
-    margin-top: 25px;
-    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
-  }
+.requirements {
+  list-style-type: none;
+}
 
-  .submit:hover {
-    opacity: 0.8;
-  }
+.wrong .fa-check {
+  display: none;
+}
 
- h5 {
-    font-family: Nunito;
-    text-align: center;
-    font-weight: 200;
-    font-size: 15px;
-    margin-top: 2px;
-  }
+.good .fa-times {
+  display: none;
+}
+
+.footer {
+  background-color: lightgrey !important;
+  max-height: 3rem !important;
+  padding: 15px;
+}
+
+
+.footer p {
+  font-size: 14px !important;
+  font-family: Nunito !important;
+  color: darkgrey !important;
+}
