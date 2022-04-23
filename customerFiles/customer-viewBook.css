@@ -91,16 +91,14 @@ body {
   /* End of Go Back link */
 
   /* Div Background Details */
-  .center {
-    margin: auto;
-    margin-top: 20px;
-    width: 1300px;
-    height: 500px;
-    display: flex;
+  .container {
     background: #C8D8E4;
     box-shadow: 3px 4px 4px 2px rgba(0, 0, 0, 0.4);
     border-radius: 5px;
+    
   }
+
+
 
 /* End of Div Details */
 
@@ -113,7 +111,7 @@ body {
 .pic {
     margin: auto;
     display: block;
-    padding-top: 25%;
+    padding-top: 20px;
     padding-bottom: 5%;
 }
 
@@ -144,13 +142,15 @@ p {
     font-family: Nunito;
     color: #3F3D56;
     font-size: 100%;
+    text-align: center;
 }
 
 .TitleInfo {
-    left: 23.15%;
+    /* left: 23.15%;
     right: 47.68%;
     top: 29.41%;
-    bottom: 59.73%;
+    bottom: 59.73%; */
+    margin-top: 50px;
     font-family: 'Nunito';
     font-style: normal;
     font-weight: 700;
@@ -163,10 +163,10 @@ p {
 }
 
 .AuthorInfo {
-    left: 25.28%;
+    /* left: 25.28%;
     right: 59.07%;
     top: 40.27%;
-    bottom: 55.2%;
+    bottom: 55.2%; */
 
     font-family: 'Nunito';
     font-style: normal;
@@ -180,10 +180,10 @@ p {
 }
 
 .PriceInfo {
-    left: 23.15%;
+    /* left: 23.15%;
     right: 47.68%;
     top: 29.41%;
-    bottom: 59.73%;
+    bottom: 59.73%; */
     font-family: 'Nunito';
     font-style: normal;
     font-weight: 700;
@@ -208,10 +208,10 @@ p {
 }
 
 .AddCart { 
-    width: 180px;
+    width: 160px;
     height: 40px;
     margin: auto;
-    margin-left: 80px;
+    
     margin-top: 40px;
     margin-bottom: 10px;
     background: #2B6777;
@@ -226,9 +226,7 @@ p {
     color: #FFFFFF; 
 }
 
-.InventoryText {
-    padding-left: 100px;
-}
+
 
 .Inventory {
     width: 50px;
@@ -242,7 +240,43 @@ p {
     margin-right: 50px;
     font-size: 12px; 
     color: #3F3D56;
-    margin-left: 10px;
+    margin-left: 40px;
     box-shadow: inset 0px 4px 4px rgba(0, 0, 0, 0.25);
 }
 /* End of Buttons Div Class */
+
+
+
+@media only screen and (max-width: 991px) {
+  .pic {
+    padding-top: 30px;
+  }
+  .PriceInfo {
+    justify-content: center;
+    
+
+  } 
+  .TitleInfo {
+    margin-top: 20px;
+    justify-content: center;
+
+  }
+  .AuthorInfo {
+    justify-content: center;
+
+  }
+
+  .Buttons {
+    margin-top: 0;
+  }
+
+  #middle {
+    background-color:#C0D1DE;
+    box-shadow: inset 0px 4px 4px rgba(0, 0, 0, 0.1);
+  }
+
+  #bottom {
+    box-shadow: inset 0px 4px 4px rgba(0, 0, 0, 0.1);
+  
+  }
+}

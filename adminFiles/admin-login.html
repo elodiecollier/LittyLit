@@ -1,27 +1,55 @@
 <!DOCTYPE>
+
 <head>
     <link href="admin-login.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css">
     <title>Welcome to LittyLit</title>
-    <link href='https://fonts.googleapis.com/css?family=Nunito' rel='stylesheet'>
-    <link href='https://fonts.googleapis.com/css?family=Girassol' rel='stylesheet'>
+    <link href='https://fonts.googleapis.com/css?family=Nunito:400,700,400italic,700italic' rel='stylesheet'>
+    <link href='https://fonts.googleapis.com/css?family=Girassol:400,700,400italic,700italic' rel='stylesheet'>
 </head>
-<body>
 
+<body>
     <main>
-        <ul>
-            <li><a class="active" href="home.html">LittyLit</a></li>
-          </ul>
-          <div class="left">
-            <h2>Administrator Login</h2>
-            <form class="adminForm" action="">
-                <label for="fname">Email</label><br>
-                <input type="text" name="user"><br>
-                <label for="fname">Password</label><br>
-                <input type="password" name="password"><br>
-                <input type="submit" value="Login"><br>
-            </form>
+        <nav class="navbar navbar-expand-lg navbar-light bg-light">
+            <a class="navbar-brand pl-4" href="#"
+                style="font-size: 60px; color: #3F3D56; font-family: Girassol;">LittyLit</a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup"
+                aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse justify-content-end" id="navbarNavAltMarkup">
+                <div class="navbar-nav d-lg-flex align-items-center mt-3">
+                    <a class="nav-item h-100 nav-link" href="home.html">
+                    </a>
+                </div>
+            </div>
+        </nav>
+        <div class="row justify-content-center">
+            <div class="col-sm-8" style="background: #C8D8E4; margin: 10%; border-radius: 25px; padding: 3%;">
+                <div class="row justify-content-center">
+                    <div class="col-sm-8">
+                        <h1 style="font-family: Nunito; text-align: center">Administrator Login</h1>
+                    </div>
+                </div>
+                <div class="row justify-content-center pt-2">
+                    <div class="col-sm-4">
+                        <label for="user" style="font-family: Nunito; color: black;">Username</label>
+                        <input type="text" name="user" class="form-control input-lg">
+                    </div>
+                </div>
+                <div class="row justify-content-center pt-4">
+                    <div class="col-sm-4">
+                        <label for="password" style="font-family: Nunito; color: black;">Password</label>
+                        <input type="password" name="password" class="form-control input-lg">
+                    </div>
+                </div>
+                <div class="row pt-5 justify-content-center">
+                    <div class="col-sm-8 text-center">
+                        <input style="background-color: #2B6777; border: 5px solid #2B6777; font-family: Nunito;"
+                            class="btn btn-primary" type="submit" value="Login">
+                    </div>
+                </div>
+            </div>
         </div>
     </main>
 </body>
-
-</html>

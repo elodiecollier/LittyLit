@@ -91,12 +91,7 @@ strong {
   /* End of Go Back link */
 
   /* Div Background Details */
-  .center {
-    margin: auto;
-    margin-top: 20px;
-    width: 1300px;
-    height: 500px;
-    display: flex;
+  .container {
     background: #C8D8E4;
     box-shadow: 3px 4px 4px 2px rgba(0, 0, 0, 0.4);
     border-radius: 5px;
@@ -115,7 +110,7 @@ strong {
 .pic {
     margin: auto;
     display: block;
-    padding-top: 25%;
+    padding-top: 30px;
     padding-bottom: 5%;
 }
 
@@ -126,7 +121,7 @@ strong {
     font-size: 17px;
     line-height: 16px;
     text-decoration-line: underline;
-
+    margin-left: 60px;
     color: #3F3D56;
 }
 
@@ -134,8 +129,8 @@ strong {
 
 
 /* Questions in Middle */
-.QMiddle {
-    margin-top: 90px;
+#QMiddle {
+    margin-top: 40px;
     margin-bottom: 20px;
 }
 form {
@@ -191,8 +186,8 @@ p {
 
 
 /* Questions at End */
-.QEnd {
-    margin-top: 105px;
+#QEnd {
+    margin-top: 40px;
     margin-bottom: 20px;
 }
 
@@ -247,7 +242,7 @@ p {
 .Buttons {
     margin-top: 420px;
     margin-bottom: 30px;
-    display: flex;
+    
 }
 
 .Remove {
@@ -259,88 +254,71 @@ p {
     margin-top: 20px;
     text-decoration-line: underline;
     color: #3F3D56;
+    margin-left: 20px;
+    margin-bottom: 20px;
 }
 
 .SaveChanges {
-    position: absolute;
-    margin-top: 10px;
+    
+    margin-top: 40px;
     font-family: Nunito;
     color: #ffffff;
     background: #2B6777;
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
     border-radius: 5px;
     padding: 10px 20px;
-    font-size: 17px;
+    font-size: 15px;
     border: 2px solid #2B6777;
-    margin-left: 14%;
+    margin-bottom: 10px;
+    /* margin-left: 14%; */
     
 }
-/* 
-padding: 15px 32px;
-    font-family: Nunito;
-    background-color: #3F3D56;
-    color: #ffffff;
-    font-size: 20px;
-    padding: 10px 20px;
-    border-radius: 10px;
-    border: 2px solid #3F3D56;
-    box-shadow: 5px 3px 10px #888888;
-    float: right;
-    margin-right: 2%;
-    margin-top: 2%; */
 
-
-/* End of Buttons Div Class */
-
-  /* 
-  .left {
-    width: 50%; 
-    height: 88%; 
-    float: left; 
-    background: #2B6777
-  }
-
-  .right {
-    background: #C8D8E4;
-    margin-left: 50%; 
-  }
   
-  h1 {
-      font-family: Girassol;
-      text-align: center;
-      margin-right: 10%;
-      font-size: 145px;
-      color: #ffffff;
-      text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
-      margin-bottom: 0;
-      margin-top: 20%;
+  @media only screen and (max-width: 991px) {
+    .Cover {
+      margin-left: 300px;
+    }
+
+    .Remove {
+      margin-left: 280px;
+      padding-bottom: 30px;
+    }
+
+    .SaveChanges {
+      margin-top: 40px;
+      margin-left: 265px;
+  
+    }
+
+    #QMiddle {
+      padding-top: 40px;
+      box-shadow: inset 0px 4px 4px rgba(0, 0, 0, 0.1);
+
+    }
+
+    #QEnd {
+      padding-top: 40px;
+      box-shadow: inset 0px 4px 4px rgba(0, 0, 0, 0.1);
+    }
+
+    #Button {
+      box-shadow: inset 0px 4px 4px rgba(0, 0, 0, 0.1);
+
+    }
+
+    
   }
 
-  p {
-      color: #ffffff;
-      font-family: Nunito;
-      font-size: 30px;
-      text-align: center;
-      padding-left: 12%;
-      padding-right: 12%;
-      margin-right: 10%;
-      margin-top: 0;
-  }
+  @media only screen and (max-width: 767px) {
+    .Cover {
+      margin-left: 200px;
+    }
+    .Remove {
+      margin-left: 200px;
+    }
 
-  .registerButton {
-    padding: 15px 32px;
-    font-family: Nunito;
-    background-color: #ffffff;
-    color: #3F3D56;
-    font-size: 20px;
-    padding: 10px 20px;
-    border-radius: 10px;
-    border: 2px solid #ffffff;
-    margin-left: 26%;
-    margin-top: 3%;
-    font-weight:bold;
+    .SaveChanges {
+      margin-left: 185px;
+    }
   }
-
-  .registerButton:hover {
-      opacity: 0.85;
-  } */

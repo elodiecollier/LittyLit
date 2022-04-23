@@ -75,7 +75,7 @@ strong {
   
 
   /* Div Background Details */
-  .center {
+  .container {
     margin: auto;
     margin-top: 100px;
     width: 1000px;
@@ -87,7 +87,7 @@ strong {
     border-radius: 5px;
   }
 
-  .center h1 {
+  .container h1 {
     font-family: 'Nunito';
     text-align: center; 
     margin-left: 10px;
@@ -101,18 +101,18 @@ strong {
     
   }
 
-  .center h1 span {
+  .container h1 span {
         font-family: 'Girassol';
         font-style: normal;
   }
 
-  .center h2 {
+  .container h2 {
     font-family: 'Nunito';
     font-style: normal;
     font-weight: 700;
     font-size: 18px;
     line-height: 22px;
-    margin-bottom: 30px;
+    
     /* or 147% */
     
     text-align: center;
@@ -129,7 +129,8 @@ strong {
     background: #FFFFFF;
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
     border-radius: 5px;
-    margin-left:350px;
+    text-align: center;
+    margin: auto;
 }
 
 .Code span {
