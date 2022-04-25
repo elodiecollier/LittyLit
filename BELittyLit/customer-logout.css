@@ -1,0 +1,128 @@
+/* Remove the navbar's default margin-bottom and rounded borders */
+.navbar {
+    margin-bottom: 0;
+    border-radius: 0;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  }
+  
+  .nav-item h5 {
+    font-size: 22px;
+    font-weight: 400;
+    padding-right: 2rem;
+  }
+  
+  .nav-item h5:hover, .nav-item a:hover {
+    color: grey !important;
+  }
+  
+  /* Set height of the grid so .sidenav can be 100% (adjust as needed) */
+  .row.content {
+    height: 100%;
+  }
+  
+  .bottom-margin {
+    margin-bottom: -0.5rem !important;
+  }
+  /* Set gray background color and 100% height */
+  .sidenav {
+    padding-top: 20px;
+    background-color: #f1f1f1;
+    height: 100%;
+  }
+  
+  .sidenav a {
+    font-size: 20px !important;
+    color: white !important;
+  }
+  
+  .sidenav h5 {
+    font-size: 18px !important;
+    color: white !important;
+  }
+  
+  .sidenav p {
+    font-size: 14px !important;
+    color: lightgrey !important;
+  }
+  
+  .nowrap {
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+  }
+  
+  .avatarMargin {
+    margin-left: 2.2rem;
+  }
+  
+  /* On small screens, set height to 'auto' for sidenav and grid */
+  @media screen and (max-width: 767px) {
+    .sidenav {
+      height: auto;
+      padding: 15px;
+    }
+  
+    .row.content {
+      height: auto;
+    }
+  }
+  
+  h3 {
+    font-family: Nunito !important;
+    font-weight: bold !important;
+    text-align: left;
+    color: #3F3D56 !important;
+    margin-bottom: 0;
+  }
+  
+  h5 {
+    font-family: Nunito;
+    text-align: center;
+    color: #3F3D56 !important;
+    margin-bottom: 0;
+    font-weight: bold;
+  }
+  
+  strong {
+    font-family: Nunito !important;
+    font-weight: bold !important;
+    color: #3F3D56 !important;
+  }
+  
+  p.sidebar {
+    text-align: center;
+    color: #ffffff;
+  }
+  
+  a.navbar-brand {
+    font-family: Girassol;
+  }
+  
+  a.nav-item {
+    font-family: Nunito;
+  }
+  
+  .row-bottom-margin {
+    margin-bottom: -10px;
+  }
+  
+  .navbar .navbar-nav {
+    float: none;
+    vertical-align: middle;
+  }
+  
+  .navbar .navbar-collapse {
+    text-align: center;
+  }
+  
+  .footer {
+    background-color: lightgrey !important;
+    max-height: 3rem !important;
+    padding: 15px;
+  }
+  
+  .footer p {
+    font-size: 14px !important;
+    font-family: Nunito !important;
+    color: darkgrey !important;
+  }
