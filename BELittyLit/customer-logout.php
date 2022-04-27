@@ -18,13 +18,27 @@ if(!isset($_SESSION['username'])) {
     $firstName=mysqli_real_escape_string($conn, $_POST['firstName']);
 
 }
+$getValuesQuery = "SELECT firstName, lastName, password, email, birthday, strAddress, city, state, zip FROM userInfo WHERE username='".$_SESSION['username']."';";
+
+$values = $conn->query($getValuesQuery);
+$row = $values->fetch_assoc();
+
+$firstName=isset($row['firstName']) ? htmlspecialchars($row['firstName']) : '';
+$lastName=isset($row['lastName']) ? htmlspecialchars($row['lastName']) : '';
+$password=$row['password'];
+$email=$row['email'];
+$birthday=$row['birthday'];
+$strAddress=isset($row['strAddress']) ? htmlspecialchars($row['strAddress']) : '';
+$city=isset($row['city']) ? htmlspecialchars($row['city']) : '';
+$state=$row['state'];
+$zip=$row['zip'];
 
 ?>
 
 <!DOCTYPE>
 
 <head>
-    <link href="customer-logout.css" rel="stylesheet">
+    <link href="userLogout.css" rel="stylesheet">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css">
     <title>LittyLit</title>
     <link href='https://fonts.googleapis.com/css?family=Nunito:400,700,400italic,700italic' rel='stylesheet'>
@@ -71,7 +85,7 @@ if(!isset($_SESSION['username'])) {
                             <div class="row">
                                 <div class="col-12 mt-3 d-flex float-left bottom-margin nowrap">
                                     
-                                <h5><?php echo $_SESSION['username'];?></h5>
+                                <h5><?php echo $firstName?></h5>
                                     
                                 </div>
                                 <div class="col-12 d-flex float-left">
@@ -81,7 +95,7 @@ if(!isset($_SESSION['username'])) {
                         </div>
                     </div>
                     <hr style="background-color: lightgrey">
-                    <h4 class="sidebar"><a href="#">
+                    <h4 class="sidebar"><a href="customer-editMyAccount.php">
                             Account Details
                         </a></h4>
                     <h4 class="sidebar"><a href="#">

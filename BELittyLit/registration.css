@@ -198,3 +198,7 @@ label {
   font-family: Nunito !important;
   color: darkgrey !important;
 }
+
+.funkyradio-success {
+  display: inline-block;
+}

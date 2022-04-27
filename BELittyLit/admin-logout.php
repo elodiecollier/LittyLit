@@ -3,27 +3,42 @@ session_start();
 
 //connect to database
 require_once ('connDB.php'); 
+
 // Check connection
 if($conn=== false){
     die("ERROR: Could not connect. " . mysqli_connect_error());
 }
-$userType = $_SESSION['userType'];
-//ensures someone is logged inbefore allowing them to create a profile
+
 if(!isset($_SESSION['username'])) {
 
     header("Location: home.html");
     exit();
 } else{
     $username = $_SESSION['username'];
+    $firstName=mysqli_real_escape_string($conn, $_POST['firstName']);
 
 }
+$getValuesQuery = "SELECT firstName, lastName, password, email, birthday, strAddress, city, state, zip FROM userInfo WHERE username='".$_SESSION['username']."';";
+
+$values = $conn->query($getValuesQuery);
+$row = $values->fetch_assoc();
+
+$firstName=isset($row['firstName']) ? htmlspecialchars($row['firstName']) : '';
+$lastName=isset($row['lastName']) ? htmlspecialchars($row['lastName']) : '';
+$password=$row['password'];
+$email=$row['email'];
+$birthday=$row['birthday'];
+$strAddress=isset($row['strAddress']) ? htmlspecialchars($row['strAddress']) : '';
+$city=isset($row['city']) ? htmlspecialchars($row['city']) : '';
+$state=$row['state'];
+$zip=$row['zip'];
 
 ?>
 
 <!DOCTYPE>
 
 <head>
-    <link href="admin-logout.css" rel="stylesheet">
+    <link href="userLogout.css" rel="stylesheet">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css">
     <title>Welcome to LittyLit</title>
     <link href='https://fonts.googleapis.com/css?family=Nunito:400,700,400italic,700italic' rel='stylesheet'>
@@ -74,7 +89,7 @@ if(!isset($_SESSION['username'])) {
                         <div class="col-8 pl-2">
                             <div class="row">
                                 <div class="col-12 mt-3 d-flex float-left bottom-margin nowrap">
-                                <h5><?php echo $_SESSION['username'];?></h5>
+                                <h5><?php echo $firstName?></h5>
                                 </div>
                                 <div class="col-12 d-flex float-left">
                                     <p>Administrator</p>
@@ -83,10 +98,10 @@ if(!isset($_SESSION['username'])) {
                         </div>
                     </div>
                     <hr style="background-color: lightgrey">
-                    <h4 class="sidebar"><a href="#">
+                    <h4 class="sidebar"><a href="admin-editMyAccount.php">
                             Account Details
                         </a></h4>
-                    <h4 class="sidebar"><a href="#admin-logout.php">
+                    <h4 class="sidebar"><a href="admin-logout.php">
                             Logout
                         </a></h4>
                 </div>

@@ -35,7 +35,7 @@ if(!isset($_SESSION['username'])) {
 <body>
   
     <main>
-    <h5><?php echo $_SESSION['userType'];?></h5>
+
       <nav class="navbar navbar-expand-lg navbar-light bg-light">
         <a class="navbar-brand pl-4" href="home.html" style="font-size: 60px; color: #3F3D56">LittyLit</a>
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup"
@@ -64,7 +64,7 @@ if(!isset($_SESSION['username'])) {
                     <p style="color: #ffffff; font-family: Nunito; margin-left: 5%; margin-right: 5%; font-size: 22px;">Shopping with us is easy - all of your personal info
                     saved here for you to reference and manage whenever you 
                       need to.</p>
-                      <a href="customer-editMyAccount.html"><button type="button" class="btn btn-light">Account Details</button></a> <br>
+                      <a href="customer-editMyAccount.php"><button type="button" class="btn btn-light">Account Details</button></a> <br>
                       <a href="customer-promotions.html"><button type="button" class="btn btn-light">Promotions</button></a> <br>
                       <a href="customer-logout.php"><button type="button" class="btn btn-light">Logout</button></a><br>
                 </div>

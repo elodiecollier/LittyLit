@@ -23,7 +23,7 @@ if(!isset($_SESSION['username'])) {
 <!DOCTYPE>
 
 <head>
-    <link href="admin-myAccount.css" rel="stylesheet">
+    <link href="myAccount.css" rel="stylesheet">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css">
     <title>Welcome to LittyLit</title>
     <link href='https://fonts.googleapis.com/css?family=Nunito:400,700,400italic,700italic' rel='stylesheet'>
@@ -43,19 +43,19 @@ if(!isset($_SESSION['username'])) {
         </button>
         <div class="collapse navbar-collapse justify-content-end" id="navbarNavAltMarkup">
           <div class="navbar-nav d-lg-flex align-items-center mt-3">
-            <a class="nav-item h-100 nav-link" href="admin-searchOrders.html">
+            <a class="nav-item h-100 nav-link" href="#">
                               <h5>Search Orders</h5>
                           </a>
-                          <a class="nav-item h-100 nav-link" href="admin-searchUsers.html">
+                          <a class="nav-item h-100 nav-link" href="#">
                               <h5>Search Users</h5>
                           </a>
-                          <a class="nav-item h-100 nav-link" href="admin-searchBooks.html">
+                          <a class="nav-item h-100 nav-link" href="#">
                               <h5>Search Books</h5>
                           </a>
-                          <a class="nav-item h-100 nav-link" href="admin-myAccount.html">
+                          <a class="nav-item h-100 nav-link" href="admin-myAccount.php">
                               <h5>My Account</h5>
                           </a>
-                          <a class="nav-item h-100 nav-link" href="admin-reports.html">
+                          <a class="nav-item h-100 nav-link" href="#">
                               <h5>Reports</h5>
                           </a>
                       </div>
@@ -70,7 +70,7 @@ if(!isset($_SESSION['username'])) {
                     <p style="color: #ffffff; font-family: Nunito; margin-left: 5%; margin-right: 5%; font-size: 22px;">Shopping with us is easy - all of your personal info
                     saved here for you to reference and manage whenever you 
                       need to.</p>
-                      <a href="admin-editMyAccount.html"><button type="button" class="btn btn-light">Account Details</button></a> <br>
+                      <a href="admin-editMyAccount.php"><button type="button" class="btn btn-light">Account Details</button></a> <br>
                       <a href="admin-logout.php"><button type="button" class="btn btn-light">Logout</button></a><br>
                 </div>
                 </div>
