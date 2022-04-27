@@ -28,6 +28,7 @@
             exit();
           } else if (isset($_POST['username'])) {
             $username = $_POST['username'];
+            $firstName = $_POST['firstName'];
             $_SESSION['username'] = $username;
             $userType = $_POST['userType'];
             $_SESSION['userType'] = 1;

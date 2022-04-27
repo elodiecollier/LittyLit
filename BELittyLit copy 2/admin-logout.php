@@ -18,15 +18,29 @@ if(!isset($_SESSION['username'])) {
     $firstName=mysqli_real_escape_string($conn, $_POST['firstName']);
 
 }
+$getValuesQuery = "SELECT firstName, lastName, password, email, birthday, strAddress, city, state, zip FROM userInfo WHERE username='".$_SESSION['username']."';";
+
+$values = $conn->query($getValuesQuery);
+$row = $values->fetch_assoc();
+
+$firstName=isset($row['firstName']) ? htmlspecialchars($row['firstName']) : '';
+$lastName=isset($row['lastName']) ? htmlspecialchars($row['lastName']) : '';
+$password=$row['password'];
+$email=$row['email'];
+$birthday=$row['birthday'];
+$strAddress=isset($row['strAddress']) ? htmlspecialchars($row['strAddress']) : '';
+$city=isset($row['city']) ? htmlspecialchars($row['city']) : '';
+$state=$row['state'];
+$zip=$row['zip'];
 
 ?>
 
 <!DOCTYPE>
 
 <head>
-    <link href="customer-logout.css" rel="stylesheet">
+    <link href="userLogout.css" rel="stylesheet">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css">
-    <title>LittyLit</title>
+    <title>Welcome to LittyLit</title>
     <link href='https://fonts.googleapis.com/css?family=Nunito:400,700,400italic,700italic' rel='stylesheet'>
     <link href='https://fonts.googleapis.com/css?family=Girassol:400,700,400italic,700italic' rel='stylesheet'>
 </head>
@@ -34,8 +48,6 @@ if(!isset($_SESSION['username'])) {
 <html>
 
 <body>
-
-
     <main>
         <nav class="navbar navbar-expand-lg navbar-light bg-light">
             <a class="navbar-brand pl-4" href="#" style="font-size: 60px; color: #3F3D56">LittyLit</a>
@@ -46,13 +58,20 @@ if(!isset($_SESSION['username'])) {
             <div class="collapse navbar-collapse justify-content-end" id="navbarNavAltMarkup">
                 <div class="navbar-nav d-lg-flex align-items-center mt-3">
                     <a class="nav-item h-100 nav-link" href="#">
-                        <h5>Browse</h5>
+                        <h5>Search Orders</h5>
                     </a>
-                    <a class="nav-item h-100 nav-link" href="customer-myAccount.php">
-                        <h5>Account</h5>
+                    <a class="nav-item h-100 nav-link" href="#">
+                        <h5>Search Users</h5>
                     </a>
-                    <a class="nav-item h-100 mb-3 nav-link" href="#"><img src="../images/cart.png" height="60px"
-                            width="60px"></a>
+                    <a class="nav-item h-100 nav-link" href="#">
+                        <h5>Search Books</h5>
+                    </a>
+                    <a class="nav-item h-100 nav-link" href="admin-myAccount.php">
+                        <h5>My Account</h5>
+                    </a>
+                    <a class="nav-item h-100 nav-link" href="#">
+                        <h5>Reports</h5>
+                    </a>
                 </div>
             </div>
         </nav>
@@ -70,24 +89,19 @@ if(!isset($_SESSION['username'])) {
                         <div class="col-8 pl-2">
                             <div class="row">
                                 <div class="col-12 mt-3 d-flex float-left bottom-margin nowrap">
-                                    
-                                <h5><?php echo $_SESSION['username'];?></h5>
-                                    
+                                <h5><?php echo $firstName?></h5>
                                 </div>
                                 <div class="col-12 d-flex float-left">
-                                    <p>Customer </p>
+                                    <p>Administrator</p>
                                 </div>
                             </div>
                         </div>
                     </div>
                     <hr style="background-color: lightgrey">
-                    <h4 class="sidebar"><a href="#">
+                    <h4 class="sidebar"><a href="admin-editMyAccount.php">
                             Account Details
                         </a></h4>
-                    <h4 class="sidebar"><a href="#">
-                            Promotions
-                        </a></h4>
-                    <h4 class="sidebar"><a href="customer-logout.php">
+                    <h4 class="sidebar"><a href="admin-logout.php">
                             Logout
                         </a></h4>
                 </div>

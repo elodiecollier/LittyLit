@@ -11,7 +11,8 @@
   padding-right: 2rem;
 }
 
-.nav-item h5:hover, .nav-item a:hover {
+.nav-item h5:hover,
+.nav-item a:hover {
   color: grey !important;
 }
 
@@ -23,6 +24,7 @@
 .bottom-margin {
   margin-bottom: -0.5rem !important;
 }
+
 /* Set gray background color and 100% height */
 .sidenav {
   padding-top: 20px;
@@ -32,7 +34,8 @@
 
 .sidenav a {
   font-size: 20px !important;
-  color: white !important;
+  color: #ffffff !important;
+  font-weight: 300 !important;
 }
 
 .sidenav h5 {
@@ -45,6 +48,19 @@
   color: lightgrey !important;
 }
 
+.footer {
+  background-color: lightgrey !important;
+  max-height: 3rem !important;
+  padding: 15px;
+}
+
+
+.footer p {
+  font-size: 14px !important;
+  font-family: Nunito !important;
+  color: darkgrey !important;
+}
+
 .nowrap {
   white-space: nowrap;
   overflow: hidden;
@@ -53,18 +69,6 @@
 
 .avatarMargin {
   margin-left: 2.2rem;
-}
-
-.footer {
-  background-color: lightgrey !important;
-  max-height: 3rem !important;
-  padding: 15px;
-}
-
-.footer p {
-  font-size: 14px !important;
-  font-family: Nunito !important;
-  color: darkgrey !important;
 }
 
 /* On small screens, set height to 'auto' for sidenav and grid */
@@ -79,20 +83,51 @@
   }
 }
 
-h3 {
-  font-family: Nunito !important;
+h1 {
+  font-family: Girassol !important;
   font-weight: bold !important;
-  text-align: left;
+  text-align: center;
+  font-size: 4rem !important;
   color: #3F3D56 !important;
   margin-bottom: 0;
 }
 
-h5 {
-  font-family: Nunito;
+h3 {
+  font-family: Nunito !important;
+  font-weight: bold !important;
   text-align: center;
   color: #3F3D56 !important;
   margin-bottom: 0;
+}
+
+h5,
+label {
+  font-family: Nunito !important;
+  color: #3F3D56 !important;
+  margin-bottom: 0;
+  text-align: left !important;
   font-weight: bold;
+}
+
+p, input, a {
+  font-family: Nunito !important;
+  text-align: left !important;
+  color: #3F3D56 !important;
+  margin-bottom: 0;
+}
+
+input {
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+
+.btn {
+  font-family: Nunito !important;
+  text-align: left;
+  color: #3F3D56 !important;
+  background-color: #C8D8E4 !important;
+  border-color: #C8D8E4 !important;
+  margin-bottom: 0;
+  vertical-align: end;
 }
 
 strong {
@@ -107,7 +142,7 @@ p.sidebar {
 }
 
 a.navbar-brand {
-  font-family: Girassol;
+  font-family: Girassol !important;
 }
 
 a.nav-item {
@@ -125,4 +160,45 @@ a.nav-item {
 
 .navbar .navbar-collapse {
   text-align: center;
+}
+
+button {
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+
+label {
+  width: 100rem;
+}
+
+.alert {
+  display: none;
+}
+
+.requirements {
+  list-style-type: none;
+}
+
+.wrong .fa-check {
+  display: none;
+}
+
+.good .fa-times {
+  display: none;
+}
+
+.footer {
+  background-color: lightgrey !important;
+  max-height: 3rem !important;
+  padding: 15px;
+}
+
+
+.footer p {
+  font-size: 14px !important;
+  font-family: Nunito !important;
+  color: darkgrey !important;
+}
+
+.funkyradio-success {
+  display: inline-block;
 }

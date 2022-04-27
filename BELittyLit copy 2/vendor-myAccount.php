@@ -23,7 +23,7 @@ if(!isset($_SESSION['username'])) {
 <!DOCTYPE>
 
 <head>
-    <link href="vendor-myAccount.css" rel="stylesheet">
+    <link href="myAccount.css" rel="stylesheet">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css">
     <title>LittyLit</title>
     <link href='https://fonts.googleapis.com/css?family=Nunito:400,700,400italic,700italic' rel='stylesheet'>
@@ -61,7 +61,7 @@ if(!isset($_SESSION['username'])) {
                     <p style="color: #ffffff; font-family: Nunito; margin-left: 5%; margin-right: 5%; font-size: 22px;">Shopping with us is easy - all of your personal info
                     saved here for you to reference and manage whenever you 
                       need to.</p>
-                      <a href="vendor-editMyAccount.html"><button type="button" class="btn btn-light">Account Details</button></a> <br>
+                      <a href="vendor-editMyAccount.php"><button type="button" class="btn btn-light">Account Details</button></a> <br>
                       <a href="vendor-logout.php"><button type="button" class="btn btn-light">Logout</button></a><br>
                 </div>
                 </div>

@@ -3,28 +3,44 @@ session_start();
 
 //connect to database
 require_once ('connDB.php'); 
+
 // Check connection
 if($conn=== false){
     die("ERROR: Could not connect. " . mysqli_connect_error());
 }
-//ensures someone is logged inbefore allowing them to create a profile
+
 if(!isset($_SESSION['username'])) {
-    // header(string: "Location: LogIn.php");
+
     header("Location: home.html");
     exit();
 } else{
     $username = $_SESSION['username'];
-    // $url = "browse.php?username=" . $username;
+    $firstName=mysqli_real_escape_string($conn, $_POST['firstName']);
+
 }
+$getValuesQuery = "SELECT firstName, lastName, password, email, birthday, strAddress, city, state, zip FROM userInfo WHERE username='".$_SESSION['username']."';";
+
+$values = $conn->query($getValuesQuery);
+$row = $values->fetch_assoc();
+
+$firstName=isset($row['firstName']) ? htmlspecialchars($row['firstName']) : '';
+$lastName=isset($row['lastName']) ? htmlspecialchars($row['lastName']) : '';
+$password=$row['password'];
+$email=$row['email'];
+$birthday=$row['birthday'];
+$strAddress=isset($row['strAddress']) ? htmlspecialchars($row['strAddress']) : '';
+$city=isset($row['city']) ? htmlspecialchars($row['city']) : '';
+$state=$row['state'];
+$zip=$row['zip'];
 
 ?>
 
 <!DOCTYPE>
 
 <head>
-    <link href="vendor-logout.css" rel="stylesheet">
+    <link href="userLogout.css" rel="stylesheet">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css">
-    <title>Welcome to LittyLit</title>
+    <title>LittyLit</title>
     <link href='https://fonts.googleapis.com/css?family=Nunito:400,700,400italic,700italic' rel='stylesheet'>
     <link href='https://fonts.googleapis.com/css?family=Girassol:400,700,400italic,700italic' rel='stylesheet'>
 </head>
@@ -32,6 +48,8 @@ if(!isset($_SESSION['username'])) {
 <html>
 
 <body>
+
+
     <main>
         <nav class="navbar navbar-expand-lg navbar-light bg-light">
             <a class="navbar-brand pl-4" href="#" style="font-size: 60px; color: #3F3D56">LittyLit</a>
@@ -42,11 +60,13 @@ if(!isset($_SESSION['username'])) {
             <div class="collapse navbar-collapse justify-content-end" id="navbarNavAltMarkup">
                 <div class="navbar-nav d-lg-flex align-items-center mt-3">
                     <a class="nav-item h-100 nav-link" href="#">
-                        <h5>My Books</h5>
+                        <h5>Browse</h5>
                     </a>
-                    <a class="nav-item h-100 nav-link" href="vendor-myAccount.php">
-                        <h5>My Account</h5>
+                    <a class="nav-item h-100 nav-link" href="customer-myAccount.php">
+                        <h5>Account</h5>
                     </a>
+                    <a class="nav-item h-100 mb-3 nav-link" href="#"><img src="../images/cart.png" height="60px"
+                            width="60px"></a>
                 </div>
             </div>
         </nav>
@@ -64,19 +84,24 @@ if(!isset($_SESSION['username'])) {
                         <div class="col-8 pl-2">
                             <div class="row">
                                 <div class="col-12 mt-3 d-flex float-left bottom-margin nowrap">
-                                <h5><?php echo $_SESSION['username'];?></h5>
+                                    
+                                <h5><?php echo $firstName?></h5>
+                                    
                                 </div>
                                 <div class="col-12 d-flex float-left">
-                                    <p>Vendor</p>
+                                    <p>Customer </p>
                                 </div>
                             </div>
                         </div>
                     </div>
                     <hr style="background-color: lightgrey">
-                    <h4 class="sidebar"><a href="#">
+                    <h4 class="sidebar"><a href="customer-editMyAccount.php">
                             Account Details
                         </a></h4>
-                    <h4 class="sidebar"><a href="vendor-logout.php">
+                    <h4 class="sidebar"><a href="#">
+                            Promotions
+                        </a></h4>
+                    <h4 class="sidebar"><a href="customer-logout.php">
                             Logout
                         </a></h4>
                 </div>
