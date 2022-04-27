@@ -138,6 +138,29 @@ strong {
     
   }
 
+  a h4, a p, a h5 {
+    color: #3F3D56 !important;
+  }
+
+  a:hover {
+    text-decoration: none !important;
+  }
+
+  .card {
+    width: 17rem !important; 
+    height: 22rem !important; 
+    background-color:#C8D8E4 !important; 
+    box-shadow: 3px 4px 4px 2px rgba(0, 0, 0, 0.4) !important;
+  }
+
+  .card:hover {
+    background-color: #2B6777 !important;
+  }
+
+  .card:hover h4, .card:hover p, .card:hover h5{
+    color: white !important;
+  }
+
   .center h4 {
     font-family: 'Nunito';
     font-style: normal;

@@ -1,3 +1,25 @@
+<?php
+session_start();
+
+//connect to database
+require_once ('connDB.php'); 
+// Check connection
+if($conn === false){
+    die("ERROR: Could not connect. " . mysqli_connect_error());
+}
+$userType = $_SESSION['userType'];
+
+if(!isset($_SESSION['username'])) {
+
+    header("Location: home.html");
+    exit();
+} else{
+    $username = $_SESSION['username'];
+}
+
+?>
+
+
 <!DOCTYPE>
 
 <head>
@@ -54,7 +76,8 @@
 
         <div class="col-sm-12 pt-4">
             <div class="row justify-content-center">
-                <a href="">
+                <?php?>
+                    <a href="">
                     <div class="card ml-4 mr-4 mt-4 mb-4">
                         <div class="col-sm-12 justify-content-center">
                             <div class="row">
@@ -74,47 +97,8 @@
                             </div>
                         </div>
                     </div>
-                </a>
-                <div class="card ml-4 mr-4 mt-4 mb-4"
-                    style="width: 17rem; height: 20rem; background-color: #C8D8E4; box-shadow: 3px 4px 4px 2px rgba(0, 0, 0, 0.4);">
-                    <div class="col-sm-12 justify-content-center">
-                        <div class="row">
-                            <img class="card-img-top mx-auto mt-5" src="../images/Gatsby.png" alt="Place Holder Book"
-                                style="height: 10rem; width: 8rem; display:block">
-                            <div class="card-body ml-1">
-                                <div class="row justify-content-center">
-                                    <h4 class="card-title">The Great Gatsby</h4>
-                                </div>
-                                <div class="row justify-content-center">
-                                    <p class="card-text"> F. Scott Fitzgerald</p>
-                                </div>
-                                <div class="row pt-1 justify-content-center">
-                                    <h5 class="card-text">$5.00</h5>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="card ml-4 mr-4 mt-4 mb-4"
-                    style="width: 17rem; height: 20rem; background-color: #C8D8E4; box-shadow: 3px 4px 4px 2px rgba(0, 0, 0, 0.4);">
-                    <div class="col-sm-12 justify-content-center">
-                        <div class="row">
-                            <img class="card-img-top mx-auto mt-5" src="../images/Gatsby.png" alt="Place Holder Book"
-                                style="height: 10rem; width: 8rem; display:block">
-                            <div class="card-body ml-1">
-                                <div class="row justify-content-center">
-                                    <h4 class="card-title">The Great Gatsby</h4>
-                                </div>
-                                <div class="row justify-content-center">
-                                    <p class="card-text"> F. Scott Fitzgerald</p>
-                                </div>
-                                <div class="row pt-1 justify-content-center">
-                                    <h5 class="card-text">$5.00</h5>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
+                    </a>
+                <?php?>
             </div>
         </div>
 
