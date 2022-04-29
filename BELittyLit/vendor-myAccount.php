@@ -46,7 +46,7 @@ if(!isset($_SESSION['username'])) {
                 <a class="nav-item h-100 nav-link" href="vendor-myBooks.html">
                     <h5>My Books</h5>
                 </a>
-                <a class="nav-item h-100 nav-link" href="vendor-myAccount.html">
+                <a class="nav-item h-100 nav-link" href="vendor-myAccount.php">
                     <h5>My Account</h5>
                 </a>
             </div>

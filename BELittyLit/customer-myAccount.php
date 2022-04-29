@@ -23,7 +23,7 @@ if(!isset($_SESSION['username'])) {
 <!DOCTYPE>
 
 <head>
-    <link href="customer-myAccount.css" rel="stylesheet">
+    <link href="myAccount.css" rel="stylesheet">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css">
     <title>LittyLit</title>
     <link href='https://fonts.googleapis.com/css?family=Nunito:400,700,400italic,700italic' rel='stylesheet'>
@@ -47,7 +47,7 @@ if(!isset($_SESSION['username'])) {
                 <a class="nav-item h-100 nav-link" href="customer-browseCatalog.html">
                     <h5>Browse</h5>
                 </a>
-                <a class="nav-item h-100 nav-link" href="customer-myAccount.html">
+                <a class="nav-item h-100 nav-link" href="customer-myAccount.php">
                     <h5>Account</h5>
                 </a>
                 <a class="nav-item h-100 mb-3 nav-link" href="customer-cart.html"><img src="../images/cart.png" height="60px"
