@@ -1,0 +1,233 @@
+body {
+  background: white;
+  margin: 0;
+}
+
+/* NAVBAR */
+.navbar {
+margin-bottom: 0;
+border-radius: 0;
+box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+
+.nav-item h5 {
+font-size: 22px;
+font-weight: 400;
+padding-right: 2rem;
+}
+
+.nav-item h5:hover, .nav-item a:hover {
+color: grey !important;
+}
+
+.nowrap {
+white-space: nowrap;
+overflow: hidden;
+text-overflow: ellipsis;
+}
+
+.avatarMargin {
+margin-left: 2.2rem;
+}
+
+a.navbar-brand {
+font-family: Girassol;
+}
+
+a.nav-item {
+font-family: Nunito;
+}
+
+.row-bottom-margin {
+margin-bottom: -10px;
+}
+
+.navbar .navbar-nav {
+float: none;
+vertical-align: middle;
+}
+
+.navbar .navbar-collapse {
+text-align: center;
+}
+
+h3 {
+font-family: Nunito !important;
+font-weight: bold !important;
+text-align: left;
+color: #3F3D56 !important;
+margin-bottom: 0;
+}
+
+h5 {
+font-family: Nunito;
+text-align: center;
+color: #3F3D56 !important;
+margin-bottom: 0;
+font-weight: bold;
+}
+
+strong {
+font-family: Nunito !important;
+font-weight: bold !important;
+color: #3F3D56 !important;
+}
+
+/* Search Users Div */
+
+#Search {
+    text-align: center;
+}
+
+#header {
+  font-family: 'Nunito';
+  font-style: normal;
+  font-weight:bolder;
+  font-size: 45px;
+  line-height: 49px;
+  
+  color: #3F3D56;
+}
+
+.emailLabel {
+  font-size: 24px;
+
+}
+
+#inputEmail::placeholder { /* Chrome, Firefox, Opera, Safari 10.1+ */
+  color: #3F3D56;
+  opacity: 1;
+  font-family: "Nunito";
+}
+
+#inputEmail {
+  border: 2px solid white;
+  background: #FFFFFF;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  border-radius: 5px;
+  margin-bottom: 10px;
+}
+
+#search-addon {
+ height: 40px;
+ box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+ border-radius: 5px;
+ margin-bottom: 10px;
+ background-color:#3F3D56;
+}
+
+#search-addon:hover {
+  opacity: 0.8;
+}
+
+#icon {
+  color: white;
+}
+
+ #para {
+    font-size: 12px;
+    
+    margin-top: -20px;
+}
+
+p {
+  display: inline;
+  font-family: Nunito;
+  color: #3F3D56;
+  font-size: 100%;
+}
+
+/* End of Search Users Div */
+
+
+
+
+
+
+/* Div Background Details */
+.container {
+  margin-left: 70px;
+  margin-top: 20px;
+  /* width: 1300px;
+  height: 175px; */
+  /* display: flex; */
+  background: #C8D8E4;
+  box-shadow: 3px 4px 4px 2px rgba(0, 0, 0, 0.4);
+  border-radius: 5px;
+  
+}
+
+#left h1 {
+  margin-top: 50px;
+  margin-left: 40px;
+
+  font-family: 'Nunito';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 60px;
+  line-height: 49px;
+  color: #3F3D56;
+}
+
+#left h2 {
+  margin-left: 40px;
+  font-family: 'Nunito';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 19px;
+  
+  color: #3F3D56;
+}
+
+/* End of Div Details */
+
+
+
+
+
+
+/* Order Summary on Side Div */
+
+
+#EditText {
+  float: right;
+  width: 90px;
+  height: 30px;
+  margin-right: 30px;
+  margin-top: 65px;
+  background-color: #2B6777;
+  border: 2px solid #2B6777;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  border-radius: 5px;
+  font-family: 'Nunito';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 19px;
+
+  color: #FFFFFF;
+}
+
+.Checkout:hover {
+  opacity: 0.8;
+}
+/* End of Order Summary on Side Div */
+
+
+/* 991 */
+
+
+
+@media only screen and (max-width: 991px) {
+#left h1 {
+  margin-left: 120px;
+}
+#left h2 {
+  margin-left: 150px;
+}
+
+#EditText {
+  margin-right: 240px;
+}
+}
