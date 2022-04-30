@@ -1,0 +1,12 @@
+.footer {
+    background-color: lightgrey !important;
+    max-height: 3rem !important;
+    padding: 15px;
+    width: 100% !important;
+}
+  
+.footer p {
+    font-size: 14px !important;
+    font-family: Nunito !important;
+    color: lightgray !important;
+}

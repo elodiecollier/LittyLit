@@ -1,0 +1,53 @@
+/* Remove the navbar's default margin-bottom and rounded borders */
+.navbar {
+    margin-bottom: 0;
+    border-radius: 0;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  }
+  
+  .nav-item h5 {
+    font-size: 22px;
+    font-weight: 400;
+    padding-right: 2rem;
+  }
+  
+  .nav-item h5:hover, .nav-item a:hover {
+    color: grey !important;
+  }
+  
+  /* Set height of the grid so .sidenav can be 100% (adjust as needed) */
+  .row.content {
+    height: 100%;
+  }
+  
+  .bottom-margin {
+    margin-bottom: -0.5rem !important;
+  }
+  
+  a.navbar-brand {
+    font-family: Girassol;
+  }
+  
+  a.nav-item {
+    font-family: Nunito;
+  }
+  
+  .row-bottom-margin {
+    margin-bottom: -10px;
+  }
+  
+  .navbar .navbar-nav {
+    float: none;
+    vertical-align: middle;
+  }
+  
+  .navbar .navbar-collapse {
+    text-align: center;
+  }
+  
+  button {
+    font-family: Nunito !important;
+    width: 50% !important;
+    font-size: 130% !important;
+    box-shadow: 5px 10px 18px #15424E !important;
+  }

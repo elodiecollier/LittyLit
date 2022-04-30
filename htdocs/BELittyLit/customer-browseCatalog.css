@@ -1,0 +1,133 @@
+.card {
+  background-color: #2B6777 !important;
+  height: 22rem;
+  width: 15rem;
+  border-radius: 1em !important;
+}
+
+.card-text, .card-title {
+  color: #fff !important;
+}
+
+.card:hover {
+  background-color: #3F3D56 !important;
+}
+
+.card:hover a, .card:hover p, .card:hover h4, .card:hover h5 {
+  color: #fff !important;
+}
+
+a:link {
+  text-decoration: none !important;
+}
+
+/* Set height of the grid so .sidenav can be 100% (adjust as needed) */
+.row.content {
+  height: 100%;
+}
+
+.bottom-margin {
+  margin-bottom: -0.5rem !important;
+}
+
+/* Set gray background color and 100% height */
+.sidenav {
+  padding-top: 20px;
+  background-color: #f1f1f1;
+  height: 100%;
+}
+
+.sidenav a {
+  font-size: 20px !important;
+  color: white !important;
+}
+
+.sidenav h5 {
+  font-size: 18px !important;
+  color: white !important;
+}
+
+.sidenav p {
+  font-size: 14px !important;
+  color: lightgrey !important;
+}
+
+.nowrap {
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.avatarMargin {
+  margin-left: 2.2rem;
+}
+/* On small screens, set height to 'auto' for sidenav and grid */
+@media screen and (max-width: 767px) {
+  .sidenav {
+    height: auto;
+    padding: 15px;
+  }
+
+  .row.content {
+    height: auto;
+  }
+}
+
+h1 {
+  font-family: Nunito !important;
+  font-weight: bold !important;
+  text-align: left;
+  color: #3F3D56 !important;
+  margin-bottom: 0;
+}
+
+h3 {
+  font-family: Nunito !important;
+  font-weight: bold !important;
+  text-align: left;
+  color: #3F3D56 !important;
+  margin-bottom: 0;
+}
+
+h5, label {
+  font-family: Nunito !important;
+  color: #3F3D56 !important;
+  margin-bottom: 0;
+  font-weight: bold;
+}
+
+p, input {
+  font-family: Nunito !important;
+  text-align: left;
+  color: #3F3D56 !important;
+  margin-bottom: 0;
+}
+
+.btn {
+  font-family: Nunito !important;
+  text-align: left;
+  color: #3F3D56 !important;
+  background-color: #C8D8E4 !important;
+  border-color: #C8D8E4 !important;
+  margin-bottom: 0;
+  vertical-align: end;
+}
+
+strong {
+  font-family: Nunito !important;
+  font-weight: bold !important;
+  color: #3F3D56 !important;
+}
+
+p.sidebar {
+  text-align: center;
+  color: #ffffff;
+}
+
+.row-bottom-margin {
+  margin-bottom: -10px;
+}
+
+.form-check .form-check-input {
+  box-shadow: none !important;
+}
